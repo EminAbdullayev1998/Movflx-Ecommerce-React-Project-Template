@@ -1,0 +1,180 @@
+{
+    "nav":{
+        "home":"Home",
+        "movies":"Movies",
+        "pricing":"Pricing",
+        "blog":"Blog",
+        "contact":"Contact",
+        "wishlist":"Wishlist",
+        "cart":"Cart",
+        "signIn":"SIGN IN"
+    },
+
+    "home":{
+        "btn1":"TV SHOWS",
+        "btn2":"DOCUMENTARY",
+        "btn3":"SPORTS",
+        "btn4":"COMEDY",
+        "btn5":"ADD TO WISHLIST",
+        "btn6":"ADD TO CART",
+        "btn7":"DETAILS",
+        "h1":"TOP RATED MOVIES"
+    },
+
+
+    "moviedetails":{
+        "p1":"Back",
+        "p2":"quality",
+        "p3":"year",
+        "p4":"rating",
+        "button1":"ADD TO CART",
+        "button2":"ADD TO WISHLIST",
+        "button3":"WATCH TRAILER"
+    },
+
+
+    "pricing":{
+        "h1":"Choose Your Plan",
+        "p1":"Basic",
+        "p2":"Free",
+        "li1":"7 days",
+        "li2":"720p Resolution",
+        "li3":"Limited Availability",
+        "li4":"Desktop Only",
+        "li5":"Limited Support",
+        "button":"Choose Plan",
+        "li6":"1 Month",
+        "li7":"Full HD",
+        "li8":"Lifetime Availability",
+        "li9":"TV & Desktop",
+        "li10":"24/7 Support",
+        "p3":"Cinematic",
+        "li11":"2 Months",
+        "li12":"Ultra HD",
+        "li13":"Lifetime Availability",
+        "li14":"Any Device",
+        "li15":"24/7 Support"
+    },
+
+
+    "contact":{
+        "h1":"Contact Us",
+        "h2":"Contact Form",
+        "placeholder1":"Your Name",
+        "placeholder2":"Email",
+        "placeholder3":"Subject",
+        "placeholder4":"Type Your Message",
+        "button":"SEND",
+        "h3":"Info",
+        "p1":"It is a long fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using."
+    },
+
+
+    "wishlist":{
+        "h11":"Your Wishlist is Empty",
+        "h12":"Wishlist",
+        "p1":"year",
+        "p2":"rating",
+        "p3":"price",
+        "button1":"DELETE",
+        "button2":"ADD TO CART"
+    },
+
+
+    "cart":{
+        "h1":"Your Cart is Empty",
+        "p1":"Add something to make me happy",
+        "th1":"Title",
+        "th2":"Photo",
+        "th3":"Price",
+        "th4":"Quantity",
+        "th5":"Delete",
+        "h12":"Total Price",
+        "button":"BUY NOW"
+    },
+
+
+    "signin":{
+        "placeholder1":"Email",
+        "placeholder2":"Password",
+        "label":"Remember Me",
+        "button":"SIGN IN",
+        "p":"Dont have an account?",
+        "a1":"Sign Up!",
+        "a2":"Forgot password?"
+    },
+
+
+    "forgotpassword":{
+        "placeholder":"Email",
+        "label":"I agree to the",
+        "a":"Privacy Policy",
+        "button":"SEND",
+        "p":"We will send a password to your Email"
+    },
+
+
+    "signup":{
+        "placeholder1":"Name",
+        "placeholder2":"Email",
+        "placeholder3":"Password",
+        "label":"I agree to the",
+        "a1":"Privacy Policy",
+        "button":"SIGN UP",
+        "p":"Already have an account?",
+        "a2":"Sign in!"
+    },
+
+    "footer":{
+        "trial":"TRIAL START FIRST 30 DAYS.",
+        "membership":"Enter your email to create or restart your membership.",
+        "get":"GET STARTED",
+        "placeholder":"Enter your email",
+        "download":"Download Our App",
+        "resources":"Resources",
+        "about":"About Us",
+        "pricing":"Pricing",
+        "help":"Help Center",
+        "legal":"Legal",
+        "term":"Term of Use",
+        "privacy":"Privacy Policy",
+        "security":"Security",
+        "contact":"Contact",
+        "p":"Copyright © 2023. All Rights Reserved By"
+    },
+
+
+
+
+
+    "title":{
+        "0":"Women's Day",
+        "1":"The Perfect Match",
+        "2":"The Dog Woof",
+        "3":"The Easy Reach",
+        "4":"The Cooking",
+        "5":"The Hikaru",
+        "6":"Life Quotes",
+        "7":"The Beachball",
+        "8":"I Dream in Another Language",
+        "9":"Puss in Boots: The Last Wish",
+        "10":"Avatar: The Way of Water",
+        "11":"Sports!"
+    },
+
+
+    "duration":{
+        "0":"128 min",
+        "1":"95 min",
+        "2":"96 min",
+        "3":"80 min",
+        "4":"82 min",
+        "5":"80 min",
+        "6":"104 min",
+        "7":"77 min",
+        "8":"120 min",
+        "9":"103 min",
+        "10":"240 min",
+        "11":"110 min"
+    }
+}

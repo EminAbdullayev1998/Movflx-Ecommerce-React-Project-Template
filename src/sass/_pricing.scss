@@ -1,0 +1,286 @@
+.pricingpage{
+    .pricingbg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+        background-image: url('../img/pricingbg.jpg');
+        background-position: center;
+        background-size: cover;
+    
+        h1{
+            font-size: 60px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            font-family: sans-serif;
+        }
+    }
+    
+    .line{
+        width: 100%;
+        height: 3px;
+        background-color: #e4d804;
+    }
+    
+    
+    .plans{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+       height: 500px;
+       background-color: #2b2b31;
+    
+       .main-box{
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           width: 80%;
+           height: 400px;
+    
+           .planbox1{
+               width: 26%;
+               height: 400px;
+               background-color: #28282d;
+               border-radius: 4px;
+               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+               cursor: pointer;
+               &:hover{
+                  border-top: 2px solid #e4d804;
+               }
+    
+               .title{
+                  display: flex;
+                  align-items: center;
+                  width: 100%;
+                  height: 100px;
+    
+                    p:nth-child(1){
+                       margin-left: 15px;
+                       font-size: 22px;
+                       font-weight: 500;
+                       font-family: sans-serif;
+                    }
+    
+                    p:nth-child(2){
+                        color: #e4d804;
+                        margin-left: 180px;
+                        font-family: sans-serif;
+                        font-size: 22px;
+                        font-weight: 500;
+                        font-family: sans-serif;
+                    }
+                }
+    
+               .pricelist{
+                   width: 100%;
+                   height: 200px;
+    
+                    ul{
+                        width: 100%;
+                        height: 200px;
+    
+                        li{
+                            width: 100%;
+                            height: 40px;
+                            list-style: disc;
+                            margin-left: 25px;
+                            color: rgba(255,255,255,0.7);
+                            font-size: 19px;
+                        }
+                    }
+                }
+    
+                .boxbtn{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100px;
+    
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 70%;
+                        height: 50px;
+                        font-weight: 700;
+                        color: white;
+                        background-color: #20212b;
+                        text-decoration: none;
+                        border: 1px solid #e4d804;
+                        border-radius: 4px;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: black;
+                            background-color: #e4d804;
+                        }
+                    }
+                }
+            }
+    
+           .planbox2{
+               width: 26%;
+               height: 400px;
+               background-color: #28282d;
+               border-radius: 4px;
+               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+               cursor: pointer;
+               &:hover{
+                  border-top: 2px solid #e4d804;
+               }
+    
+               .title{
+                  display: flex;
+                  align-items: center;
+                  width: 100%;
+                  height: 100px;
+    
+                  p:nth-child(1){
+                    margin-left: 15px;
+                    font-size: 22px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                  }
+    
+                  p:nth-child(2){
+                     color: #e4d804;
+                     margin-left: 130px;
+                     font-family: sans-serif;
+                     font-size: 22px;
+                     font-weight: 500;
+                     font-family: sans-serif;
+                  }
+               }
+    
+                .pricelist{
+                    width: 100%;
+                    height: 200px;
+    
+                    ul{
+                        width: 100%;
+                        height: 200px;
+    
+                        li{
+                            width: 100%;
+                            height: 40px;
+                            list-style: disc;
+                            margin-left: 25px;
+                            color: rgba(255,255,255,0.7);
+                            font-size: 19px;
+                        }
+                    }
+                }
+    
+               .boxbtn{
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   width: 100%;
+                   height: 100px;
+    
+                    a{
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      width: 70%;
+                      height: 50px;
+                      font-weight: 700;
+                      color: white;
+                      background-color: #20212b;
+                      text-decoration: none;
+                      border: 1px solid #e4d804;
+                      border-radius: 4px;
+                      transition: all 0.5s;
+                      &:hover{
+                          color: black;
+                          background-color: #e4d804;
+                      }
+                    }
+                }
+            }
+    
+            .planbox3{
+                 width: 26%;
+                 height: 400px;
+                 background-color: #28282d;
+                 border-radius: 4px;
+                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                 cursor: pointer;
+                 &:hover{
+                    border-top: 2px solid #e4d804;
+                 }
+    
+                 .title{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 100px;
+    
+                    p:nth-child(1){
+                        margin-left: 15px;
+                        font-size: 22px;
+                        font-weight: 500;
+                        font-family: sans-serif;
+                    }
+        
+                      p:nth-child(2){
+                         color: #e4d804;
+                         margin-left: 120px;
+                         font-family: sans-serif;
+                         font-size: 22px;
+                         font-weight: 500;
+                         font-family: sans-serif;
+                    }
+                  }
+      
+                  .pricelist{
+                      width: 100%;
+                      height: 200px;
+    
+                        ul{
+                          width: 100%;
+                          height: 200px;
+    
+                            li{
+                                width: 100%;
+                                height: 40px;
+                                list-style: disc;
+                                margin-left: 25px;
+                                color: rgba(255,255,255,0.7);
+                                font-size: 19px;
+                            }
+                        }
+                   }
+      
+                  .boxbtn{
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      width: 100%;
+                      height: 100px;
+    
+                       a{
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         width: 70%;
+                         height: 50px;
+                         font-weight: 700;
+                         color: white;
+                         background-color: #20212b;
+                         text-decoration: none;
+                         border: 1px solid #e4d804;
+                         border-radius: 4px;
+                         transition: all 0.5s;
+                         &:hover{
+                             color: black;
+                             background-color: #e4d804;
+                         }
+                       } 
+                   }
+            }
+       }
+    }
+}

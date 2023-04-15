@@ -1,0 +1,181 @@
+{
+    "nav":{
+        "home":"Əsas səhifə",
+        "movies":"Filmlər",
+        "pricing":"Ödənişlər",
+        "blog":"Blog",
+        "contact":"Əlaqə",
+        "wishlist":"Arzu",
+        "cart":"Səbət",
+        "signIn":"DAXİL OL"
+    },
+
+    "home":{
+        "btn1":"TV ŞOULAR",
+        "btn2":"SƏNƏDLİ",
+        "btn3":"İDMAN",
+        "btn4":"KOMEDİYA",
+        "btn5":"ARZU ƏLAVƏ ET",
+        "btn6":"SƏBƏTƏ ƏLAVƏ ET",
+        "btn7":"ƏTRAFLI",
+        "h1":"ƏN REYTİNQLİ FİLMLƏR"
+    },
+
+
+    "moviedetails":{
+        "p1":"Geri",
+        "p2":"keyfiyyət",
+        "p3":"il",
+        "p4":"reytinq",
+        "button1":"SƏBƏTƏ ƏLAVƏ ET",
+        "button2":"ARZU ƏLAVƏ ET",
+        "button3":"TREYLER IZLƏ"
+    },
+
+
+    "pricing":{
+        "h1":"Ödəniş Tarifinizi Seçin",
+        "p1":"Əsas",
+        "p2":"Pulsuz",
+        "li1":"7 gün",
+        "li2":"720p Görüntü keyfiyyəti",
+        "li3":"Məhdud Əlçatımlılıq",
+        "li4":"Yalnız Masaüstü",
+        "li5":"Məhdud Dəstək",
+        "button":"Tarifi Seç",
+        "li6":"1 Ay",
+        "li7":"Tam HD",
+        "li8":"Daimi Əlçatımlılıq",
+        "li9":"TV və Masaüstü",
+        "li10":"24/7 Dəstək",
+        "p3":"Kinematik",
+        "li11":"2 Ay",
+        "li12":"Son dərəcə HD",
+        "li13":"Daimi Əlçatımlılıq",
+        "li14":"İstənilən Cihaz",
+        "li15":"24/7 Dəstək"
+    },
+
+
+    "contact":{
+        "h1":"Bizimlə Əlaqə Saxlayın",
+        "h2":"Əlaqə Forması",
+        "placeholder1":"Adınız",
+        "placeholder2":"Elektron poçt",
+        "placeholder3":"Mövzu",
+        "placeholder4":"Mesajınızı yazın",
+        "button":"GÖNDƏR",
+        "h3":"Məlumat",
+        "p1":"Oxucunun səhifənin tərtibatına baxarkən onun oxuna bilən məzmunu ilə diqqətini yayındıracağı uzun bir həqiqətdir. Lorem Ipsum-dan istifadənin məqsədi ondan ibarətdir ki, istifadə etməkdən fərqli olaraq, hərflərin az-çox normal paylanması var."
+    },
+
+
+    "wishlist":{
+        "h11":"Arzu Siyahınız Boşdur",
+        "h12":"Arzu",
+        "p1":"il",
+        "p2":"reytinq",
+        "p3":"qiymət",
+        "button1":"Sil",
+        "button2":"SƏBƏTƏ ƏLAVƏ ET"
+    },
+
+
+    "cart":{
+        "h1":"Sizin kartınız boşdur",
+        "p1":"Məni xoşbəxt etmək üçün bir şey əlavə et",
+        "th1":"Ad",
+        "th2":"Foto",
+        "th3":"Qiymət",
+        "th4":"Miqdar",
+        "th5":"Sil",
+        "h12":"Toplam Qiymət",
+        "button":"İNDİ AL"
+    },
+
+
+    "signin":{
+        "placeholder1":"Elektron poçt",
+        "placeholder2":"Şifrə",
+        "label":"Məni xatırla",
+        "button":"DAXİL OL",
+        "p":"Hesabınız yoxdur?",
+        "a1":"Qeydiyyatdan keç!",
+        "a2":"Şifrəni unutmusunuz?"
+    },
+
+
+    "forgotpassword":{
+        "placeholder":"Elektron poçt",
+        "label":"Mən razıyam",
+        "a":"Məxfilik Siyasəti",
+        "button":"GÖNDƏR",
+        "p":"E-poçtunuza parol göndərəcəyik"
+    },
+
+
+    "signup":{
+        "placeholder1":"Ad",
+        "placeholder2":"Elektron poçt",
+        "placeholder3":"Şifrə",
+        "label":"Mən razıyam",
+        "a1":"Məxfilik Siyasəti",
+        "button":"QEYDİYYATDAN KEÇ",
+        "p":"Zatən bir hesabınız var mı?",
+        "a2":"Daxil ol!"
+    },
+
+    "footer":{
+        "trial":"SINAQ BAŞLANĞICI İLK 30 GÜN",
+        "membership":"Üzvlüyünüzü yaratmaq və ya yenidən başlamaq üçün e-poçtunuzu daxil edin.",
+        "get":"BAŞLA",
+        "placeholder":"E-poçtunuzu daxil edin",
+        "download":"Tətbiqimizi yükləyin",
+        "resources":"Resurslar",
+        "about":"Haqqımızda",
+        "pricing":"Ödənişlər",
+        "help":"Yardım Mərkəzi",
+        "legal":"Hüquqi",
+        "term":"İstifadə Şərtləri",
+        "privacy":"Gizlilik Siyasəti",
+        "security":"Təhlükəsizlik",
+        "contact":"Əlaqə",
+        "p":"Copyright © 2023. Bütün Hüquqlar Qorunur"
+    },
+
+
+
+
+
+   
+    "title":{
+        "0":"Qadınlar günü",
+        "1":"Mükəmməl Uyğunluq",
+        "2":"It hürməsi",
+        "3":"Asan çatma",
+        "4":"Bişirmək",
+        "5":"The Hikaru",
+        "6":"Həyat Sitatları",
+        "7":"Çimərlik topu",
+        "8":"Mən başqa dildə xəyal edirəm",
+        "9":"Çəkməli pişik: Son arzu",
+        "10":"Avatar: Su yolu",
+        "11":"İdman!"
+    },
+
+
+    "duration":{
+        "0":"128 dəq",
+        "1":"95 dəq",
+        "2":"96 dəq",
+        "3":"80 dəq",
+        "4":"82 dəq",
+        "5":"80 dəq",
+        "6":"104 dəq",
+        "7":"77 dəq",
+        "8":"120 dəq",
+        "9":"103 dəq",
+        "10":"240 dəq",
+        "11":"110 dəq"
+    }
+}

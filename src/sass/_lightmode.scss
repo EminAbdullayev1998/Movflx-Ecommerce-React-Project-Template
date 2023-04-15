@@ -1,0 +1,5099 @@
+.light{
+    color: black;
+    background-color: white;
+
+    header{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        background-color: #D0B8A8;
+    
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            height: 100px;
+    
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60%;
+                height: 50px;
+    
+                img{
+                    width: 100%;
+                    height: 50px;
+                }
+            }
+        }
+    
+    
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            height: 100px;
+    
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 90%;
+                height: 80px;
+    
+                a{
+                    color: black;
+                    font-family: sans-serif;
+                    text-decoration: none;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: #F49D1A;
+                    }
+                }
+            }
+        }
+    
+    
+        .tools{
+            display: flex;
+            width: 50%;
+            height: 100px;
+    
+            .langbox{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 15%;
+                height: 100px;
+
+                .btnEn{
+                    width: 45%;
+                    height: 35px;
+                    margin-right: 5px;
+                    border: none;
+                    background: transparent;
+                    
+                    img{
+                        width: 100%;
+                        height: 35px;
+                        cursor: pointer;
+                    }
+                }
+    
+                .btnAz{
+                    width: 45%;
+                    height: 35px;
+                    border: none;
+                    background: transparent;
+                    
+    
+                    img{
+                        width: 100%;
+                        height: 35px;
+                        cursor: pointer;
+                    }
+                }
+            }
+    
+            .modebox{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20%;
+                height: 100px;
+                
+                // Dark-Light mode icon ==============
+                label{
+                    width: 70%;
+                    height: 40px;
+                    position: relative;
+                    display: block;
+                    background: #dcc3b1;
+                    border-radius: 200px;
+                    cursor: pointer;
+                }
+    
+                label:after {
+                    content: "";
+                    width: 35%;
+                    height: 40px;
+                    position: absolute;
+                    top: 1px;
+                    left: 0px;
+                    background: linear-gradient(180deg,#ffcc89,#d8860b);
+                    border-radius: 180px;
+                  }
+    
+                  input {
+                    width: 0;
+                    height: 0;
+                    visibility: hidden;
+                  }
+    
+                  input:checked + label {
+                    background: #242424;
+                  }
+                  input:checked + label:after {
+                    left: 70px;
+                    // transform: translateX(-100%);
+                    background: linear-gradient(180deg,#777,#3a3a3a);
+                  }
+                  label, label:after {
+                    transition: 0.3s
+                  }
+    
+                  label .fa-solid{
+                      position: absolute;
+                      font-size: 25px;
+                      top: 8px;
+                      left: 5px;
+                      z-index: 100;
+                  }
+    
+                  label .fa-sun{
+                     color: white;
+                  }
+    
+                  label .fa-moon{
+                     left: 78px;
+                  }
+    
+                  input:checked + label .fa-sun{
+                     color: gray;
+                  }
+    
+                  input:checked + label .fa-moon{
+                      color: white;
+                  }
+    
+            }
+    
+            .wishlist{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 18%;
+                height: 100px;
+    
+                a{
+                    text-decoration: none;
+                    color: black;
+                    cursor: pointer;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: #F49D1A;
+                    }
+    
+                    li{
+                        .fa-heart{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+    
+            .cart{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 18%;
+                height: 100px;
+    
+                a{
+                    text-decoration: none;
+                    color: black;
+                    cursor: pointer;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: #F49D1A;
+                    }
+    
+                    li{
+                        .fa-cart-shopping{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+    
+            .login{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 25%;
+                height: 100px;
+    
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 80%;
+                    height: 50px;
+                    background: #D0B8A8;
+                    border: 2px solid #F49D1A;
+                    border-radius: 50px;
+                    color: black;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    transition: all 0.5s;
+                    &:hover{
+                        background: #F49D1A;
+                        color: white;
+                    }
+                }
+
+
+                .test{
+                    text-align: center;
+                    width: 100%;
+                    height: 80px;
+    
+                    p{
+                        font-size: 20px;
+                        color: #579BB1;
+                    }
+    
+                    button{
+                        width: 90px;
+                        height: 30px;
+                        border: none;
+                        background-color: #F49D1A;
+                        font-weight: bold;
+                        border-radius: 5px;
+                        transition: all 1s;
+                        &:hover{
+                            background-color: #c58526;
+                        }
+                    }
+                }
+            }
+    
+    
+            .burger-menu{
+                display: none;
+                align-items:  center;
+                justify-content: center;
+                width: 15%;
+                height: 100px;
+    
+                .fa-bars{
+                    font-size: 30px;
+                    color: black;
+                    cursor: pointer;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: #F49D1A;
+                    }
+                }
+
+                .fa-x{
+                    font-size: 30px;
+                    color: black;
+                    cursor: pointer;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: #F49D1A;
+                    }
+                }
+            }
+        }
+
+
+
+            // TOGGLE MENU ===============================================================
+            #togglemenu{
+                position: fixed;
+                top: 0;
+                left: 0;
+                transform: translateX(-320px);
+                width: 20%;
+                height: 755px;
+                background-color: #815B5B;
+                z-index: 100;
+                transition: 1s;
+        
+                .main-box{
+                    width: 100%;
+                    height: 600px;
+        
+                    .home{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 50px;
+        
+                        a{
+                            color: white;
+                            font-family: sans-serif;
+                            text-decoration: none;
+                            transition: all 0.5s;
+                            &:hover{
+                                color: #e4d804;
+                            }
+                        }
+                    }
+        
+                    .movies{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 50px;
+        
+                        a{
+                            color: white;
+                            font-family: sans-serif;
+                            text-decoration: none;
+                            transition: all 0.5s;
+                            &:hover{
+                                color: #e4d804;
+                            }
+                        }
+                    }
+        
+                    .pricing{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 50px;
+        
+                        a{
+                            color: white;
+                            font-family: sans-serif;
+                            text-decoration: none;
+                            transition: all 0.5s;
+                            &:hover{
+                                color: #e4d804;
+                            }
+                        }
+                    }
+        
+                    .blog{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 50px;
+        
+                        a{
+                            color: white;
+                            font-family: sans-serif;
+                            text-decoration: none;
+                            transition: all 0.5s;
+                            &:hover{
+                                color: #e4d804;
+                            }
+                        }
+                    }
+        
+                    .contact{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 50px;
+        
+                        a{
+                            color: white;
+                            font-family: sans-serif;
+                            text-decoration: none;
+                            transition: all 0.5s;
+                            &:hover{
+                                color: #e4d804;
+                            }
+                        }
+                    }
+        
+        
+                    .langbox{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 50px;
+        
+                        .btnEn{
+                            width: 20%;
+                            height: 35px;
+                            margin-right: 5px;
+                            border: none;
+                            background: transparent;
+                            
+                            img{
+                                width: 100%;
+                                height: 35px;
+                                cursor: pointer;
+                            }
+                        }
+            
+                        .btnAz{
+                            width: 20%;
+                            height: 35px;
+                            border: none;
+                            background: transparent;
+                            
+            
+                            img{
+                                width: 100%;
+                                height: 35px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+        
+        
+                    .wishlist{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 50px;
+            
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            cursor: pointer;
+                            transition: all 0.5s;
+                            &:hover{
+                                color: #e4d804;
+                            }
+            
+                            li{
+                                .fa-heart{
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+        
+        
+                    .cart{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 50px;
+            
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            cursor: pointer;
+                            transition: all 0.5s;
+                            &:hover{
+                                color: #e4d804;
+                            }
+            
+                            li{
+                                .fa-cart-shopping{
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+        
+        
+                    .login{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 70px;
+            
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 50%;
+                            height: 50px;
+                            background: #9E7676;
+                            border: 2px solid orange;
+                            border-radius: 50px;
+                            color: white;
+                            font-size: 14px;
+                            font-weight: 700;
+                            text-decoration: none;
+                            transition: all 0.5s;
+                            &:hover{
+                                background: orange;
+                                color: whi;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+
+
+
+    .home{
+        .carousel{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 400px;
+        
+            img{
+                width: 100%;
+                height: 400px;
+            }
+        }
+        
+        
+        .categories{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            background-color: white;
+        
+            .main-box{
+                width: 80%;
+                height: auto;
+        
+                .active{
+                    color: #e4d804 !important;
+                    border: 2px solid #e4d804;
+                }
+        
+                .catbuttons{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100px;
+        
+                    .hero-box{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 60%;
+                        height: 100px;
+        
+                        button{
+                            width: 19%;
+                            height: 40px;
+                            color: orange;
+                            background-color: #F3EFE0;
+                            border: 2px solid orange;
+                            border-radius: 10px;
+                            transition: all 0.5s;
+                            &:hover{
+                                color: #F3EFE0;
+                                background-color: orange;
+                            }
+                            &:focus{
+                                color: #F3EFE0;
+                                background-color: orange;
+                            }
+                        }
+                    }
+                }
+        
+        
+                .listbox{
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    height: auto;
+        
+                    .card{
+                        width: 24%;
+                        height: 550px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                        border: 2px solid #F3EFE0;
+                        background-color: #F3EFE0;
+                        padding: 5px;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        transition: all 0.5s;
+                        &:hover{
+                            border: 2px solid orange;
+                        }
+            
+                        .photo{
+                            position: relative;
+                            width: 100%;
+                            height: 400px;
+                            background-color: #2b2b31;
+                            border-radius: 4px;
+                            overflow: hidden;
+                            &:hover{
+                                .info{
+                                    visibility: visible;
+                                }
+            
+                                img{
+                                    transform: scale(1.1,1.1);
+                                }
+                            }
+            
+                            img{
+                                width: 100%;
+                                height: 400px;
+                                background-color: #2b2b31;
+                                transition: all 1s;
+                            }
+            
+                            .info{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                visibility: hidden;
+                                position: absolute;
+                                top: 0;
+                                width: 100%;
+                                height: 400px;
+                                background-color: rgba(0, 0, 0, 0.7);
+            
+                                .hero-box{
+                                    width: 90%;
+                                    height: 300px;
+            
+                                    .title{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 50px;
+
+                                        h4{
+                                            color: white;
+                                        }
+                                    }
+            
+                                    .duration{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 40px;
+            
+                                        p{
+                                            color: white;
+                                            font-size: 18px;
+                                            .fa-clock{
+                                                color: orange;
+                                            }
+                                        }
+                                    }
+            
+                                    .year{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 40px;
+            
+                                        p{
+                                            color: white;
+                                            font-size: 18px;
+                                            .fa-calendar-days{
+                                                color: orange;
+                                            }
+                                        }
+                                    }
+            
+                                    .quality{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 40px;
+            
+                                        p{
+                                            color: white;
+                                            font-size: 18px;
+                                            .fa-glasses{
+                                                color: orange;
+                                            }
+                                        }
+                                    }
+            
+                                    .rating{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 40px;
+            
+                                        p{
+                                            color: white;
+                                            font-size: 18px;
+                                            .fa-star{
+                                                color: orange;
+                                            }
+                                        }
+                                    }
+            
+                                    .price{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 40px;
+            
+                                        p{
+                                            color: white;
+                                            font-size: 18px;
+                                            .fa-sack-dollar{
+                                                color: orange;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+            
+                        .part1{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 50px;
+            
+                            button{
+                                width: 70%;
+                                height: 40px;
+                                color: white;
+                                font-weight: 30px;
+                                font-weight: 500;
+                                border: none;
+                                border: 1px solid orange;
+                                border-radius: 4px;
+                                background-color: #E6DDC4;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: white;
+                                    background-color: orange;
+                                }
+                            }
+                        }
+            
+                        .part2{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 50px;
+            
+                            button{
+                                width: 70%;
+                                height: 40px;
+                                color: white;
+                                font-weight: 30px;
+                                font-weight: 500;
+                                border: none;
+                                border: 1px solid orange;
+                                border-radius: 4px;
+                                background-color: #E6DDC4;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: white;
+                                    background-color: orange;
+                                }
+                            }
+                        }
+            
+                        .part3{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 50px;
+            
+                            a{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 70%;
+                                height: 40px;
+                                color: white;
+                                text-decoration: none;
+                                font-weight: 30px;
+                                font-weight: 500;
+                                border: none;
+                                border: 1px solid orange;
+                                border-radius: 4px;
+                                background-color: #E6DDC4;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: white;
+                                    background-color: orange;
+                                }
+                            }
+                        }
+                    }
+                }
+        
+            }
+        }
+        
+        
+        
+        .videoads{
+            width: 100%;
+            height: 600px;
+            background-color: aquamarine;
+        
+            video{
+                width: 100%;
+                height: 600px;
+                background-color: aqua;
+                object-fit: fill;
+            }
+        }
+        
+        
+        
+        .test{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+        
+            .main-box{
+                width: 80%;
+                height: auto;
+
+                .title{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 70px;
+        
+                    h1{
+                        color: orange;
+                        font-size: 40px;
+                        font-weight: 700;
+                        font-family: sans-serif;
+                        letter-spacing: 4px;
+                    }
+                }
+
+        
+                .list{
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    height: auto;
+        
+                    .card{
+                        width: 24%;
+                        height: 550px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                        border: 2px solid #F3EFE0;
+                        background-color: #F3EFE0;
+                        padding: 5px;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        transition: all 0.5s;
+                        &:hover{
+                            border: 2px solid orange;
+                        }
+            
+                        .photo{
+                            position: relative;
+                            width: 100%;
+                            height: 400px;
+                            background-color: #2b2b31;
+                            border-radius: 4px;
+                            overflow: hidden;
+                            &:hover{
+                                .info{
+                                    visibility: visible;
+                                }
+            
+                                img{
+                                    transform: scale(1.1,1.1);
+                                }
+                            }
+            
+                            img{
+                                width: 100%;
+                                height: 400px;
+                                background-color: #2b2b31;
+                                transition: all 1s;
+                            }
+            
+                            .info{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                visibility: hidden;
+                                position: absolute;
+                                top: 0;
+                                width: 100%;
+                                height: 400px;
+                                background-color: rgba(0, 0, 0, 0.7);
+            
+                                .hero-box{
+                                    width: 90%;
+                                    height: 300px;
+            
+                                    .title{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 50px;
+
+                                        h4{
+                                            color: white;
+                                        }
+                                    }
+            
+                                    .duration{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 40px;
+            
+                                        p{
+                                            color: white;
+                                            font-size: 18px;
+                                            .fa-clock{
+                                                color: orange;
+                                            }
+                                        }
+                                    }
+            
+                                    .year{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 40px;
+            
+                                        p{
+                                            color: white;
+                                            font-size: 18px;
+                                            .fa-calendar-days{
+                                                color: orange;
+                                            }
+                                        }
+                                    }
+            
+                                    .quality{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 40px;
+            
+                                        p{
+                                            color: white;
+                                            font-size: 18px;
+                                            .fa-glasses{
+                                                color: orange;
+                                            }
+                                        }
+                                    }
+            
+                                    .rating{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 40px;
+            
+                                        p{
+                                            color: white;
+                                            font-size: 18px;
+                                            .fa-star{
+                                                color: orange;
+                                            }
+                                        }
+                                    }
+            
+                                    .price{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 40px;
+            
+                                        p{
+                                            color: white;
+                                            font-size: 18px;
+                                            .fa-sack-dollar{
+                                                color: orange;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+            
+                        .part1{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 50px;
+            
+                            button{
+                                width: 70%;
+                                height: 40px;
+                                color: white;
+                                font-weight: 30px;
+                                font-weight: 500;
+                                border: none;
+                                border: 1px solid orange;
+                                border-radius: 4px;
+                                background-color: #E6DDC4;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: white;
+                                    background-color: orange;
+                                }
+                            }
+                        }
+            
+                        .part2{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 50px;
+            
+                            button{
+                                width: 70%;
+                                height: 40px;
+                                color: white;
+                                font-weight: 30px;
+                                font-weight: 500;
+                                border: none;
+                                border: 1px solid orange;
+                                border-radius: 4px;
+                                background-color: #E6DDC4;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: white;
+                                    background-color: orange;
+                                }
+                            }
+                        }
+            
+                        .part3{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 50px;
+            
+                            a{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 70%;
+                                height: 40px;
+                                color: white;
+                                text-decoration: none;
+                                font-weight: 30px;
+                                font-weight: 500;
+                                border: none;
+                                border: 1px solid orange;
+                                border-radius: 4px;
+                                background-color: #E6DDC4;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: white;
+                                    background-color: orange;
+                                }
+                            }
+                        }
+                    }
+                }
+        
+                nav{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 70px;
+        
+                    ul{
+                        width: 30%;
+                        display: flex;
+                        justify-content: space-evenly;
+        
+                        button{
+                             width: 80px;
+                             background-color: #F3EFE0;
+                             border: 1px solid orange;
+                             &:focus{
+                                background-color: orange;
+                                color: white;
+                             }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        .moviescarousel{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 800px;
+        
+            .main-box{
+                width: 80%;
+                height: 700px;
+        
+                .title{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: 50px;
+        
+                    h1{
+                        color: orange;
+                        font-size: 40px;
+                        font-weight: 700;
+                        font-family: sans-serif;
+                        letter-spacing: 4px;
+                    }
+                }
+        
+                .owl-theme{
+                    width: 100%;
+                    height: 600;
+        
+                    .item{
+                        width: 80%;
+
+                        .card{
+                            width: 100%;
+                            height: 550px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            cursor: pointer;
+                            border: 2px solid #F3EFE0;
+                            background-color: #F3EFE0;
+                            padding: 5px;
+                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            transition: all 0.5s;
+                            &:hover{
+                                border: 2px solid orange;
+                            }
+                
+                            .photo{
+                                position: relative;
+                                width: 100%;
+                                height: 400px;
+                                background-color: #2b2b31;
+                                border-radius: 4px;
+                                overflow: hidden;
+                                &:hover{
+                                    .info{
+                                        visibility: visible;
+                                    }
+                
+                                    img{
+                                        transform: scale(1.1,1.1);
+                                    }
+                                }
+                
+                                img{
+                                    width: 100%;
+                                    height: 400px;
+                                    background-color: #2b2b31;
+                                    transition: all 1s;
+                                }
+                
+                                .info{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    visibility: hidden;
+                                    position: absolute;
+                                    top: 0;
+                                    width: 100%;
+                                    height: 400px;
+                                    background-color: rgba(0, 0, 0, 0.7);
+                
+                                    .hero-box{
+                                        width: 90%;
+                                        height: 300px;
+                
+                                        .title{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 100%;
+                                            height: 50px;
+    
+                                            h4{
+                                                color: white;
+                                            }
+                                        }
+                
+                                        .duration{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 100%;
+                                            height: 40px;
+                
+                                            p{
+                                                color: white;
+                                                font-size: 18px;
+                                                .fa-clock{
+                                                    color: orange;
+                                                }
+                                            }
+                                        }
+                
+                                        .year{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 100%;
+                                            height: 40px;
+                
+                                            p{
+                                                color: white;
+                                                font-size: 18px;
+                                                .fa-calendar-days{
+                                                    color: orange;
+                                                }
+                                            }
+                                        }
+                
+                                        .quality{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 100%;
+                                            height: 40px;
+                
+                                            p{
+                                                color: white;
+                                                font-size: 18px;
+                                                .fa-glasses{
+                                                    color: orange;
+                                                }
+                                            }
+                                        }
+                
+                                        .rating{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 100%;
+                                            height: 40px;
+                
+                                            p{
+                                                color: white;
+                                                font-size: 18px;
+                                                .fa-star{
+                                                    color: orange;
+                                                }
+                                            }
+                                        }
+                
+                                        .price{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 100%;
+                                            height: 40px;
+                
+                                            p{
+                                                color: white;
+                                                font-size: 18px;
+                                                .fa-sack-dollar{
+                                                    color: orange;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                
+                            .part1{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                height: 50px;
+                
+                                button{
+                                    width: 70%;
+                                    height: 40px;
+                                    color: white;
+                                    font-weight: 30px;
+                                    font-weight: 500;
+                                    border: none;
+                                    border: 1px solid orange;
+                                    border-radius: 4px;
+                                    background-color: #E6DDC4;
+                                    transition: all 0.5s;
+                                    &:hover{
+                                        color: white;
+                                        background-color: orange;
+                                    }
+                                }
+                            }
+                
+                            .part2{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                height: 50px;
+                
+                                button{
+                                    width: 70%;
+                                    height: 40px;
+                                    color: white;
+                                    font-weight: 30px;
+                                    font-weight: 500;
+                                    border: none;
+                                    border: 1px solid orange;
+                                    border-radius: 4px;
+                                    background-color: #E6DDC4;
+                                    transition: all 0.5s;
+                                    &:hover{
+                                        color: white;
+                                        background-color: orange;
+                                    }
+                                }
+                            }
+                
+                            .part3{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                height: 50px;
+                
+                                a{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 70%;
+                                    height: 40px;
+                                    color: white;
+                                    text-decoration: none;
+                                    font-weight: 30px;
+                                    font-weight: 500;
+                                    border: none;
+                                    border: 1px solid orange;
+                                    border-radius: 4px;
+                                    background-color: #E6DDC4;
+                                    transition: all 0.5s;
+                                    &:hover{
+                                        color: white;
+                                        background-color: orange;
+                                    }
+                                }
+                            }
+                        }
+                    }
+        
+                    .owl-dots{
+        
+                        .owl-dot{
+        
+                            span{
+                                background-color: orange;
+                            }
+                        }
+        
+                        .owl-dot.active{
+                            span{
+                                background-color: rgb(175, 139, 71);
+                            }
+                        }
+        
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .moviespage{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 1350px;
+        background-color: white;
+    
+        .main-box{
+            width: 80%;
+            height: 1350px;
+    
+            .searchbox{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100px;
+    
+                .search{
+                    display: flex;
+                    align-items: center;
+                    width: 50%;
+                    height: 50px;
+                    background-color: #F3EFE0;
+                    border-radius: 8px;
+    
+                    input{
+                        width: 90%;
+                        height: 40px;
+                        margin-left: 5px;
+                        border: none;
+                        background-color: #F3EFE0;
+                        &:focus-visible{
+                            outline: none;
+                        }
+                    }
+    
+                    .fa-solid{
+                        font-size: 25px;
+                        color: black;
+                        margin-left: 10px;
+                    }
+                }
+            }
+    
+    
+            .filterbox{
+                display: none;
+                align-items: center;
+                width: 100%;
+                height: 50px;
+    
+                button{
+                    width: 9%;
+                    height: 40px;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: orange;
+                    margin-left: 70px;
+                }
+            }
+    
+    
+            .listbox{
+                position: relative;
+                display: flex;
+                width: 100%;
+                height: 1250px;
+    
+                .categorybox{
+                    width: 20%;
+                    height: 1250px;
+                    overflow-y: auto;
+                    background-color: #F3EFE0;
+        
+                    .categoryitem{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 50px;
+        
+                        /* Hide the default checkbox */
+                            .container input {
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                                height: 0;
+                                width: 0;
+                            }
+          
+                            .container {
+                              display: block;
+                              position: relative;
+                              cursor: pointer;
+                              font-size: 20px;
+                              user-select: none;
+                              text-align: center;
+                              width: 80%;
+                              height: 40px;
+        
+                               span{
+                                  margin-left: 35px;
+                               }
+                            }
+          
+                        /* Create a custom checkbox */
+                        .checkmark {
+                          position: relative;
+                          top: -25px;
+                          left: 0px;
+                          height: 24px;
+                          width: 13%;
+                          background-color: #DDDDDD;
+                          border-radius: 50%;
+                        }
+                        
+                        /* When the checkbox is checked, add a blue background */
+                        .container input:checked ~ .checkmark {
+                          background-color: #FF8B13;
+                        }
+          
+                        /* Create the checkmark/indicator (hidden when not checked) */
+                        .checkmark:after {
+                          content: "";
+                          position: absolute;
+                          display: none;
+                        }
+                        
+                        /* Show the checkmark when checked */
+                        .container input:checked ~ .checkmark:after {
+                          display: block;
+                        }
+          
+                        /* Style the checkmark/indicator */
+                        .container .checkmark:after {
+                          left: 0.40em;
+                          top: 0.25em;
+                          width: 0.30em;
+                          height: 0.6em;
+                          border: solid white;
+                          border-width: 0 0.15em 0.15em 0;
+                          transform: rotate(45deg);
+                        }
+                    }
+                }
+    
+    
+                .movieslist{
+                    width: 80%;
+                    height: 1150px;
+    
+                    .list{
+                        display: flex;
+                        justify-content: space-evenly;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        height: 1150px;
+
+                        .card{
+                            width: 30%;
+                            height: 550px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            cursor: pointer;
+                            border: 2px solid #F3EFE0;
+                            background-color: #F3EFE0;
+                            padding: 5px;
+                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            transition: all 0.5s;
+                            &:hover{
+                                border: 2px solid orange;
+                            }
+                
+                            .photo{
+                                position: relative;
+                                width: 100%;
+                                height: 400px;
+                                background-color: #2b2b31;
+                                border-radius: 4px;
+                                overflow: hidden;
+                                &:hover{
+                                    .info{
+                                        visibility: visible;
+                                    }
+                
+                                    img{
+                                        transform: scale(1.1,1.1);
+                                    }
+                                }
+                
+                                img{
+                                    width: 100%;
+                                    height: 400px;
+                                    background-color: #2b2b31;
+                                    transition: all 1s;
+                                }
+                
+                                .info{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    visibility: hidden;
+                                    position: absolute;
+                                    top: 0;
+                                    width: 100%;
+                                    height: 400px;
+                                    background-color: rgba(0, 0, 0, 0.7);
+                
+                                    .hero-box{
+                                        width: 90%;
+                                        height: 300px;
+                
+                                        .title{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 100%;
+                                            height: 50px;
+    
+                                            h4{
+                                                color: white;
+                                            }
+                                        }
+                
+                                        .duration{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 100%;
+                                            height: 40px;
+                
+                                            p{
+                                                color: white;
+                                                font-size: 18px;
+                                                .fa-clock{
+                                                    color: orange;
+                                                }
+                                            }
+                                        }
+                
+                                        .year{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 100%;
+                                            height: 40px;
+                
+                                            p{
+                                                color: white;
+                                                font-size: 18px;
+                                                .fa-calendar-days{
+                                                    color: orange;
+                                                }
+                                            }
+                                        }
+                
+                                        .quality{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 100%;
+                                            height: 40px;
+                
+                                            p{
+                                                color: white;
+                                                font-size: 18px;
+                                                .fa-glasses{
+                                                    color: orange;
+                                                }
+                                            }
+                                        }
+                
+                                        .rating{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 100%;
+                                            height: 40px;
+                
+                                            p{
+                                                color: white;
+                                                font-size: 18px;
+                                                .fa-star{
+                                                    color: orange;
+                                                }
+                                            }
+                                        }
+                
+                                        .price{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 100%;
+                                            height: 40px;
+                
+                                            p{
+                                                color: white;
+                                                font-size: 18px;
+                                                .fa-sack-dollar{
+                                                    color: orange;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                
+                            .part1{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                height: 50px;
+                
+                                button{
+                                    width: 70%;
+                                    height: 40px;
+                                    color: white;
+                                    font-weight: 30px;
+                                    font-weight: 500;
+                                    border: none;
+                                    border: 1px solid orange;
+                                    border-radius: 4px;
+                                    background-color: #E6DDC4;
+                                    transition: all 0.5s;
+                                    &:hover{
+                                        color: white;
+                                        background-color: orange;
+                                    }
+                                }
+                            }
+                
+                            .part2{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                height: 50px;
+                
+                                button{
+                                    width: 70%;
+                                    height: 40px;
+                                    color: white;
+                                    font-weight: 30px;
+                                    font-weight: 500;
+                                    border: none;
+                                    border: 1px solid orange;
+                                    border-radius: 4px;
+                                    background-color: #E6DDC4;
+                                    transition: all 0.5s;
+                                    &:hover{
+                                        color: white;
+                                        background-color: orange;
+                                    }
+                                }
+                            }
+                
+                            .part3{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                height: 50px;
+                
+                                a{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 70%;
+                                    height: 40px;
+                                    color: white;
+                                    text-decoration: none;
+                                    font-weight: 30px;
+                                    font-weight: 500;
+                                    border: none;
+                                    border: 1px solid orange;
+                                    border-radius: 4px;
+                                    background-color: #E6DDC4;
+                                    transition: all 0.5s;
+                                    &:hover{
+                                        color: white;
+                                        background-color: orange;
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .pagination-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100px;
+                        font-weight: 500;
+                        font-size: 15px;
+                      }
+                      
+                      .pagination-container a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: black;
+                        height: 40px;
+                        width: 50px;
+                        text-decoration: none;
+                        transition: background-color .2s;
+                        border: 1px solid black;
+                        background-color: orange;
+                        color: black;
+                        cursor: pointer;
+                        
+                      }
+    
+                      #prev{
+                        width: 80px;
+                        border-radius: 4px;
+                      }
+    
+                      #next{
+                        width: 80px;
+                        border-radius: 4px;
+                      }
+    
+                      #numbers{
+                        height: 50px;
+                        clip-path: circle(43.0% at 50% 50%);
+                      }
+                      
+                      .pagination-container a.active {
+                        background-color: #0081B4;
+                        color: #171D22;
+                        border: 1px solid #7cbddb;
+                      }
+                      
+                      .pagination-container a.disabled { 
+                        opacity: 0.2;
+                      }
+                      .pagination-container a:hover:not(.active) {background-color: #0081B4; color: #171D22;}
+                }
+    
+    
+                .filterHamburger{
+                    display: none;
+                    position: fixed;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 670px;
+                    z-index: 999;
+                    background-color: #F3EFE0;
+    
+                    .closebox{
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        width: 100%;
+                        height: 50px;
+    
+                        .fa-x{
+                            font-size: 35px;
+                            margin-right: 10px;
+                            cursor: pointer;
+                        }
+                    }
+    
+                    .categorylist{
+                        width: 100%;
+                        height: 460px;
+                        overflow-y: auto;
+    
+                        .itemcategory{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 50px;
+    
+                            
+                            .container input {
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                                height: 0;
+                                width: 0;
+                            }
+    
+                            .container {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                cursor: pointer;
+                                font-size: 20px;
+                                user-select: none;
+                                width: 100%;
+                                height: 40px;
+    
+                                span{
+                                    position: absolute;
+                                    left: 510px;
+                                }
+                            }
+    
+                            
+                            .checkmark {
+                                position: relative;
+                                top: 2px;
+                                left: -120px;
+                                height: 20px;
+                                width: 2%;
+                                background-color: #e5e5e5;
+                                border-radius: 50%;
+                            }
+    
+                            
+                            .container input:checked ~ .checkmark {
+                                background-color: orange;
+                            }
+    
+                            
+                            .checkmark:after {
+                                content: "";
+                                position: absolute;
+                                display: none;
+                            }
+    
+                            
+                            .container input:checked ~ .checkmark:after {
+                                display: block;
+                            }
+    
+                            
+                            .container .checkmark:after {
+                                left: 10px;
+                                top: 5px;
+                                width: 25%;
+                                height: 10px;
+                                border: solid white;
+                                border-width: 0 0.15em 0.15em 0;
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .detailspage{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 700px;
+        background-color: white;
+    
+        .main-box{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            height: 700px;
+    
+            .detailbox{
+                display: flex;
+                width: 80%;
+                height: 600px;
+                background-color: #F3EFE0;
+                padding: 5px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
+                .photos{
+                    width: 50%;
+                    height: 500px;
+    
+                    .mainphoto{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 350px;
+    
+                        .hero-box{
+                            width: 90%;
+                            height: 325px;
+    
+                            img{
+                                width: 100%;
+                                height: 325px;
+                            }
+                        }
+                    }
+    
+                    .thumb-box{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        width: 100%;
+                        height: 150px;
+    
+                        img{
+                            width: 40%;
+                            height: 100px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+    
+                .info{
+                    width: 50%;
+                    height: 500px;
+    
+                    .backbox{
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        width: 100%;
+                        height: 50px;
+    
+                        p{
+                            cursor: pointer;
+                        }
+                    }
+    
+                    .title{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: auto;
+                        margin-top: 10px;
+    
+                        h2{
+                            color: #000000;
+                            font-family: sans-serif;
+                            font-weight: 600;
+                        }
+                    }
+    
+                    .about{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        height: 50px;
+    
+                        .quality{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 25%;
+                            height: 50px;
+    
+                            p{
+                                color: orange;
+                                font-size: 18px;
+                                font-family: sans-serif;
+                                span{
+                                   color: #D2001A;
+                                }
+                            }
+                        }
+    
+                        .year{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 25%;
+                            height: 50px;
+    
+                            p{
+                                color: orange;
+                                font-size: 18px;
+                                font-family: sans-serif;
+                                span{
+                                   color: #D2001A;
+                                }
+                            }
+                        }
+    
+                        .rating{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 25%;
+                            height: 50px;
+    
+                            p{
+                                color: orange;
+                                font-size: 18px;
+                                font-family: sans-serif;
+                                span{
+                                   color: #D2001A;
+                                }
+                            }
+                        }
+                    }
+    
+    
+                    .description{
+                        width: 100%;
+                        height: 270px;
+    
+                        p{
+                            color: #334756;
+                            font-weight: 500;
+                        }
+                    }
+    
+    
+                    .buttons{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        width: 100%;
+                        height: 100px;
+    
+                        button{
+                            width: 40%;
+                            height: 40px;
+                            color: black;
+                            font-size: 15px;
+                            font-weight: 500;
+                            border: none;
+                            border: 1px solid orange;
+                            border-radius: 4px;
+                            background-color: #E6DDC4;
+                            transition: all 0.5s;
+                            &:hover{
+                                color: white;
+                                background-color: orange;
+                            }
+                        }
+                    }
+    
+    
+                    .watch{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 60px;
+    
+                        button{
+                            width: 40%;
+                            height: 50px;
+                            margin-left: 30px;
+                            font-size: 17px;
+                            font-weight: 600;
+                            color: #20212b;
+                            border: none;
+                            border-radius: 4px;
+                            background-image: radial-gradient(circle, #e4d804, #FF8B13);
+                            position: relative;
+                            animation: bn13bouncy 5s infinite linear;
+                            transition: all 0.5s;
+                            &:hover{
+                                color: black;
+                                background-color: #e4d804;
+                            }
+    
+                            @keyframes bn13bouncy {
+                                0% {
+                                  top: 0em;
+                                }
+                                40% {
+                                  top: 0em;
+                                }
+                                43% {
+                                  top: -0.9em;
+                                }
+                                46% {
+                                  top: 0em;
+                                }
+                                48% {
+                                  top: -0.4em;
+                                }
+                                50% {
+                                  top: 0em;
+                                }
+                                100% {
+                                  top: 0em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+    
+            .popup{
+                display: none;
+                position: absolute;
+                top: 50px;
+                width: 80%;
+                height: 600px;
+    
+                video{
+                    width: 100%;
+                    height: 600px;
+                    object-fit: fill;
+                }
+    
+                button{
+                    position: absolute;
+                    top: 1px;
+                    right: -48px;
+                    width: 5%;
+                    font-size: 18px;
+                    font-weight: 700;
+                    background-color: orange;
+                }
+            }
+        }
+    }
+
+
+
+    .pricingpage{
+        .pricingbg{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 200px;
+            background-image: url('../img/pricingbg.jpg');
+            background-position: center;
+            background-size: cover;
+        
+            h1{
+                color: white;
+                font-size: 60px;
+                font-weight: 700;
+                letter-spacing: 5px;
+                font-family: sans-serif;
+            }
+        }
+        
+        .line{
+            width: 100%;
+            height: 4px;
+            background-color: orange;
+        }
+        
+        
+        .plans{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           width: 100%;
+           height: 500px;
+           background-color: white;
+        
+           .main-box{
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               width: 80%;
+               height: 400px;
+        
+               .planbox1{
+                   width: 26%;
+                   height: 400px;
+                   background-color: #F3EFE0;
+                   border-radius: 4px;
+                   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                   cursor: pointer;
+                   &:hover{
+                      border-top: 2px solid orange;
+                   }
+        
+                   .title{
+                      display: flex;
+                      align-items: center;
+                      width: 100%;
+                      height: 100px;
+        
+                        p:nth-child(1){
+                           color: black;
+                           margin-left: 15px;
+                           font-size: 22px;
+                           font-weight: 500;
+                           font-family: sans-serif;
+                        }
+        
+                        p:nth-child(2){
+                            color: orange;
+                            margin-left: 180px;
+                            font-family: sans-serif;
+                            font-size: 22px;
+                            font-weight: 500;
+                            font-family: sans-serif;
+                        }
+                    }
+        
+                   .pricelist{
+                       width: 100%;
+                       height: 200px;
+        
+                        ul{
+                            width: 100%;
+                            height: 200px;
+        
+                            li{
+                                width: 100%;
+                                height: 40px;
+                                list-style: disc;
+                                margin-left: 25px;
+                                color: #20212b;
+                                font-size: 19px;
+                            }
+                        }
+                    }
+        
+                    .boxbtn{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100px;
+        
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 70%;
+                            height: 50px;
+                            font-weight: 700;
+                            color: black;
+                            background-color: #E6DDC4;
+                            text-decoration: none;
+                            border: 1px solid orange;
+                            border-radius: 4px;
+                            transition: all 0.5s;
+                            &:hover{
+                                color: white;
+                                background-color: orange;
+                            }
+                        }
+                    }
+                }
+        
+               .planbox2{
+                   width: 26%;
+                   height: 400px;
+                   background-color: #F3EFE0;
+                   border-radius: 4px;
+                   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                   cursor: pointer;
+                   &:hover{
+                      border-top: 2px solid orange;
+                   }
+        
+                   .title{
+                      display: flex;
+                      align-items: center;
+                      width: 100%;
+                      height: 100px;
+        
+                      p:nth-child(1){
+                        color: black;
+                        margin-left: 15px;
+                        font-size: 22px;
+                        font-weight: 500;
+                        font-family: sans-serif;
+                      }
+        
+                      p:nth-child(2){
+                         color: orange;
+                         margin-left: 130px;
+                         font-family: sans-serif;
+                         font-size: 22px;
+                         font-weight: 500;
+                         font-family: sans-serif;
+                      }
+                   }
+        
+                    .pricelist{
+                        width: 100%;
+                        height: 200px;
+        
+                        ul{
+                            width: 100%;
+                            height: 200px;
+        
+                            li{
+                                width: 100%;
+                                height: 40px;
+                                list-style: disc;
+                                margin-left: 25px;
+                                color: #20212b;
+                                font-size: 19px;
+                            }
+                        }
+                    }
+        
+                   .boxbtn{
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       width: 100%;
+                       height: 100px;
+        
+                        a{
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          width: 70%;
+                          height: 50px;
+                          font-weight: 700;
+                          color: black;
+                          background-color: #E6DDC4;
+                          text-decoration: none;
+                          border: 1px solid orange;
+                          border-radius: 4px;
+                          transition: all 0.5s;
+                          &:hover{
+                              color: white;
+                              background-color: orange;
+                          }
+                        }
+                    }
+                }
+        
+                .planbox3{
+                     width: 26%;
+                     height: 400px;
+                     background-color: #F3EFE0;
+                     border-radius: 4px;
+                     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                     cursor: pointer;
+                     &:hover{
+                        border-top: 2px solid orange;
+                     }
+        
+                     .title{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 100px;
+        
+                        p:nth-child(1){
+                            color: black;
+                            margin-left: 15px;
+                            font-size: 22px;
+                            font-weight: 500;
+                            font-family: sans-serif;
+                        }
+            
+                          p:nth-child(2){
+                             color: orange;
+                             margin-left: 120px;
+                             font-family: sans-serif;
+                             font-size: 22px;
+                             font-weight: 500;
+                             font-family: sans-serif;
+                        }
+                      }
+          
+                      .pricelist{
+                          width: 100%;
+                          height: 200px;
+        
+                            ul{
+                              width: 100%;
+                              height: 200px;
+        
+                                li{
+                                    width: 100%;
+                                    height: 40px;
+                                    list-style: disc;
+                                    margin-left: 25px;
+                                    color: #20212b;
+                                    font-size: 19px;
+                                }
+                            }
+                       }
+          
+                      .boxbtn{
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          width: 100%;
+                          height: 100px;
+        
+                           a{
+                             display: flex;
+                             align-items: center;
+                             justify-content: center;
+                             width: 70%;
+                             height: 50px;
+                             font-weight: 700;
+                             color: black;
+                             background-color: #E6DDC4;
+                             text-decoration: none;
+                             border: 1px solid orange;
+                             border-radius: 4px;
+                             transition: all 0.5s;
+                             &:hover{
+                                 color: white;
+                                 background-color: orange;
+                             }
+                           } 
+                       }
+                }
+           }
+        }
+    }
+
+
+
+    .blogpage{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background-color: white;
+    
+        .main-box{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            height: auto;
+    
+            .bloglist{
+                width: 60%;
+                height: auto;
+    
+                .blogcard{
+                    width: 100%;
+                    height: auto;
+                    background-color: #F3EFE0;
+                    margin-top: 15px;
+                    margin-bottom: 30px;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    
+                    .photo{
+                        width: 100%;
+                        height: 300px;
+    
+                        img{
+                            width: 100%;
+                            height: 300px;
+                        }
+                    }
+    
+                    .date{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 50px;
+    
+                        p{
+                            margin-left: 20px;
+    
+                            .fa-clock{
+                                color: orange;
+                            }
+                        }
+                    }
+    
+                    .title{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: auto;
+    
+                        h2{
+                            margin-left: 20px;
+                        }
+                    }
+    
+                    .desc{
+                        width: 100%;
+                        height: 100px;
+    
+                        p{
+                            margin-left: 20px;
+                        }
+                    }
+    
+                    .readmore{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 50px;
+    
+                        a{
+                            text-decoration: none;
+                        }
+                        
+                        p:nth-child(1){
+                            margin-left: 20px;
+    
+                            span{
+                                font-size: 18px;
+                            }
+    
+                            .fa-user{
+                                color: orange;
+                                font-size: 15px;
+                            }
+                        }
+    
+                        p:nth-child(2){
+                            margin-left: 500px;
+                            cursor: pointer;
+    
+                            span{
+                                font-size: 20px;
+                                color: orange;
+                            }
+    
+                            .fa-angles-right{
+                                font-size: 15px;
+                                color: orange;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .sidebar{
+                width: 30%;
+                height: 800px;
+    
+                .dashboard{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100px;
+    
+                    a{
+                        text-decoration: none;
+                        width: 40%;
+                        height: 50px;
+    
+                        button {
+                            width: 100%;
+                            height: 50px;
+                            text-transform: uppercase;
+                            display: inline-block;
+                            text-align: center;
+                            font-weight: bold;
+                            border: 3px solid orange;
+                            background-color: #E6DDC4;
+                            border-radius: 2px;
+                            position: relative;
+                            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+                            color: black;
+                            text-decoration: none;
+                            transition: 0.3s ease all;
+                            z-index: 1;
+                           }
+                           
+                           button:before {
+                            transition: 0.5s all ease;
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            right: 50%;
+                            bottom: 0;
+                            opacity: 0;
+                            content: '';
+                            background-color: orange;
+                            z-index: -1;
+                           }
+                           
+                           button:hover, button:focus {
+                            color: white;
+                           }
+                           
+                           button:hover:before, button:focus:before {
+                            transition: 0.5s all ease;
+                            left: 0;
+                            right: 0;
+                            opacity: 1;
+                           }
+                           
+                           button:active {
+                            transform: scale(0.9);
+                           }
+                    }
+                }
+            }
+    
+        }
+    }
+
+    .addblogpage{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 700px;
+        background-color: white;
+    
+        .main-box{
+            width: 50%;
+            height: 600px;
+    
+            .listboardbutton{
+                 width: 100%;
+                 height: 100px;
+    
+                 button{
+                    position: relative;
+                    width: 20%;
+                    height: 50px;
+                    color: black;
+                    font-size: 18px;
+                    border: none;
+                    transition: all 250ms;
+                    z-index: 1;
+                    overflow: hidden;
+                    border-radius: 4px;
+                    background-color: #F3EFE0;
+                    &:active{
+                        transform: scale(0.94);
+                    }
+                    &:hover{
+                        color: #28282d;
+                    }
+                 }
+    
+                 button::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 50px;
+                    background-color: orange;
+                    z-index: -1;
+                    border-radius: 4px;
+                    transition: all 250ms;
+                 }
+    
+                 button:hover::before{
+                    width: 100%;
+                 }
+            }
+    
+            .formbox{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 500px;
+    
+                .form{
+                    width: 60%;
+                    height: 500px;
+    
+                    .photo{
+                        width: 100%;
+                        height: 100px;
+    
+                        p{
+                            font-size: 20px;
+                        }
+    
+                        input{
+                            width: 100%;
+                            height: 40px;
+                            &:focus-visible{
+                                outline: none;
+                                border: 2px solid orange;
+                                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                            }
+                        }
+                    }
+    
+                    .title{
+                        width: 100%;
+                        height: 100px;
+    
+                        p{
+                            font-size: 20px;
+                        }
+    
+                        input{
+                            width: 100%;
+                            height: 40px;
+                            &:focus-visible{
+                                outline: none;
+                                border: 2px solid orange;
+                                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                            }
+                        }
+                    }
+    
+                    .date{
+                        width: 100%;
+                        height: 80px;
+    
+                        input[type="date"]{
+                            background-color: orange;
+                            border: none;
+                            outline: none;
+                            font-size: 15px;
+                        }
+                    }
+    
+                    .desc{
+                        width: 100%;
+                        height: 155px;
+    
+                        p{
+                            font-size: 20px;
+                        }
+    
+                        textarea{
+                            &:focus-visible{
+                                outline: none;
+                                border: 2px solid orange;
+                                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                            }
+                        }
+                    }
+    
+                    .button{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 60px;
+    
+                        button {
+                            font-family: monospace;
+                            background-color: #F3EFE0;
+                            color: black;
+                            border: none;
+                            border-radius: 8px;
+                            width: 100px;
+                            height: 45px;
+                            transition: .3s;
+                          }
+                          
+                          button:hover {
+                            background-color: orange;
+                            box-shadow: 0 0 0 5px rgba(248, 161, 0, 0.636);
+                            color: #28282d;
+                          }
+                          
+                    }
+                }
+            }
+        }
+    }
+
+    .bloglistboardpage{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background-color: white;
+    
+        .main-box{
+            width: 80%;
+            height: auto;
+    
+            table{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border: 1px solid black;
+                color: black;
+    
+                th{
+                    text-align: center;
+                    border-bottom: 1px solid black;
+                    border-right: 1px solid black;
+                    background-color: #5D3891;
+                    color: orange;
+                    font-size: 20px;
+                }
+    
+                td{
+                    text-align: center;
+                    border-right: 1px solid black;
+                    font-size: 17px;
+                    background-color: #93BFCF;
+                }
+    
+                td:nth-child(4){
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-evenly;
+    
+                      a{
+                        width: auto;
+                        height: auto;
+    
+                        .edit{
+                          width: 150%;
+                          height: 40px;
+                        }
+    
+                      }
+    
+                      button {
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        --color: #DC0000;
+                        background-color: #93BFCF;
+                        display: inline-block;
+                        width: 25%;
+                        height: 40px;
+                        overflow: hidden;
+                        z-index: 1;
+                        color: var(--color);
+                        border: 2px solid var(--color);
+                        position: relative;
+                      }
+                      
+                      button::before {
+                        position: absolute;
+                        content: "";
+                        background: var(--color);
+                        width: 100%;
+                        height: 40px;
+                        z-index: -1;
+                      }
+                      
+                      button:hover {
+                        color: #FFEA20;
+                      }
+                      
+                      button:before {
+                        top: 100%;
+                        left: 100%;
+                        transition: .3s all;
+                      }
+                      
+                      button:hover::before {
+                        top: 0px;
+                        left: 0px;
+                      }
+                }
+            }
+        }
+    }
+
+    .editblogpage{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 700px;
+        background-color: white;
+    
+        .main-box{
+            width: 30%;
+            height: 600px;
+    
+            .photo{
+                width: 100%;
+                height: 100px;
+    
+                p{
+                    font-size: 20px;
+                }
+    
+                input{
+                    width: 100%;
+                    height: 40px;
+                    &:focus-visible{
+                        outline: none;
+                        border: 2px solid orange;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    }
+                }
+            }
+    
+            .title{
+                width: 100%;
+                height: 100px;
+    
+                p{
+                    font-size: 20px;
+                }
+    
+                input{
+                    width: 100%;
+                    height: 40px;
+                    &:focus-visible{
+                        outline: none;
+                        border: 2px solid orange;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    }
+                }
+            }
+    
+            .date{
+                width: 100%;
+                height: 100px;
+    
+                p{
+                    font-size: 20px;
+                }
+    
+                input[type="date"]{
+                    background-color: orange;
+                    border: none;
+                    outline: none;
+                    font-size: 15px;
+                }
+            }
+    
+            .desc{
+                width: 100%;
+                height: 155px;
+    
+                p{
+                    font-size: 20px;
+                }
+    
+                textarea{
+                    &:focus-visible{
+                        outline: none;
+                        border: 2px solid orange;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    }
+                }
+            }
+    
+            .button{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 60px;
+    
+                button {
+                    width: 20%;
+                    height: 40px;
+                    background-color: orange;
+                    color: #2b2b31;
+                    transition: 0.1s ease;
+                    box-shadow: 1px 2px 0 0 #1A120B;
+                    &:hover{
+                        transform: translateY(-4px);
+                        box-shadow: 1px 9px 0 0 #1A120B;
+                    }
+                    &:active{
+                        transform: translateY(4px);
+                        box-shadow: 0px 0px 0 0 #1A120B;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .contactpage{
+        .contactbg{
+            width: 100%;
+            height: 300px;
+            background-color: aqua;
+            background-image: url('../img/contactbg.jpg');
+            background-size: cover;
+    
+             .layout{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 300px;
+                background-color: rgba(0, 0, 0, 0.5);
+    
+                h1{
+                    color: white;
+                    font-size: 60px;
+                    font-weight: 700;
+                    letter-spacing: 5px;
+                    font-family: sans-serif;
+                }
+            }
+        }
+    
+    
+        .line{
+            width: 100%;
+            height: 3px;
+            background-color: orange;
+        }
+    
+    
+        .formbox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 700px;
+            background-color: white;
+    
+            .main-box{
+                display: flex;
+                width: 60%;
+                height: 600px;
+    
+                .contactform{
+                    width: 70%;
+                    height: 600px;
+    
+                    .h2box{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 100px;
+    
+                        h2{
+                            color: black;
+                            font-size: 36px;
+                            line-height: 50px;
+                        }
+                    }
+    
+                    .form{
+                        width: 100%;
+                        height: 460px;
+                        background-color: #F3EFE0;
+    
+                        .textinput{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 60px;
+    
+                            input{
+                                width: 90%;
+                                height: 40px;
+                                color: white;
+                                background-color: white;
+                                font-family: sans-serif;
+                                font-size: 16px;
+                                border: 1px solid transparent;
+                                border-radius: 4px;
+                                &:hover{
+                                    border: 1px solid orange;
+                                }
+                            }
+
+                            input::placeholder{
+                                color: #434242;
+                            }
+    
+                            input:focus{
+                                outline: none;
+                                border-color: orange;
+                            }
+                        }
+    
+    
+                        .emailinput{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 60px;
+    
+                            input{
+                                width: 90%;
+                                height: 40px;
+                                color: white;
+                                background-color: white;
+                                font-family: sans-serif;
+                                font-size: 16px;
+                                border: 1px solid transparent;
+                                border-radius: 4px;
+                                &:hover{
+                                    border: 1px solid orange;
+                                }
+                            }
+
+                            input::placeholder{
+                                color: #434242;
+                            }
+    
+                            input:focus{
+                                outline: none;
+                                border-color: orange;
+                            }
+                        }
+    
+    
+                        .subjectinput{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 60px;
+    
+                            input{
+                                width: 90%;
+                                height: 40px;
+                                color: white;
+                                background-color: white;
+                                font-family: sans-serif;
+                                font-size: 16px;
+                                border: 1px solid transparent;
+                                border-radius: 4px;
+                                &:hover{
+                                    border: 1px solid orange
+                                }
+                            }
+
+                            input::placeholder{
+                                color: #434242;
+                            }
+    
+                            input:focus{
+                                outline: none;
+                                border-color: orange;
+                            }
+                        }
+    
+    
+                        .textareainput{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 200px;
+    
+                            textarea{
+                                width: 90%;
+                                height: 190px;
+                                color: white;
+                                background-color: white;
+                                font-family: sans-serif;
+                                font-size: 16px;
+                                border: 1px solid transparent;
+                                border-radius: 4px;
+                                &:hover{
+                                    border: 1px solid orange
+                                }
+                            }
+
+                            textarea::placeholder{
+                                color: #434242;
+                            }
+    
+                            textarea:focus{
+                                outline: none;
+                                border-color: orange;
+                            }
+                        }
+    
+    
+                        .sendbtn{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 80px;
+    
+                            button{
+                                width: 20%;
+                                height: 50px;
+                                color: black;
+                                background-color: #E6DDC4;
+                                border: 2px solid orange;
+                                font-size: 14px;
+                                font-weight: 700;
+                                letter-spacing: 3px;
+                                cursor: pointer;
+                                margin-left: 25px;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: white;
+                                    background-color: orange;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+    
+                .infobox{
+                    width: 30%;
+                    height: 600px;
+    
+                    .h2box{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 100px;
+    
+                        h2{
+                            color: black;
+                            font-size: 36px;
+                            line-height: 50px;
+                            margin-left: 10px;
+                        }
+                    }
+    
+    
+                    .text{
+                        width: 100%;
+                        height: 200px;
+    
+                        p{
+                            color: black;
+                            font-size: 17px;
+                            line-height: 26px;
+                            font-family: sans-serif;
+                            font-weight: 400;
+                            margin-left: 10px;
+                        }
+                    }
+    
+    
+                    .phone{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 50px;
+    
+                        p{
+                            color: rgba(0,0,0,0.7);
+                            font-size: 16px;
+                            font-weight: 300;
+                            margin-left: 15px;
+                        }
+                    }
+    
+    
+                    .email{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 50px;
+    
+                        p{
+                            color: rgba(0,0,0,0.7);
+                            font-size: 16px;
+                            font-weight: 300;
+                            margin-left: 15px;
+                        }
+                    }
+    
+    
+                    .social{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 50px;
+    
+                        a{
+                            .fa-square-facebook{
+                                color: #4267B2;
+                                font-size: 25px;
+                                margin-left: 15px;
+                                transition: all 1s;
+                                &:hover{
+                                    transform: rotate(360deg);
+                                }
+                            }
+                        }
+    
+                        a{
+                            .fa-youtube{
+                                color: #FF0000;
+                                font-size: 25px;
+                                margin-left: 10px;
+                                transition: all 1s;
+                                &:hover{
+                                    transform: rotate(360deg);
+                                }
+                            }
+                        }
+    
+                        a{
+                            .fa-instagram{
+                                color: #C13584;
+                                font-size: 25px;
+                                margin-left: 10px;
+                                transition: all 1s;
+                                &:hover{
+                                    transform: rotate(360deg);
+                                }
+                            }
+                        }
+    
+                        a{
+                            .fa-twitter{
+                                color: #1DA1F2;
+                                font-size: 25px;
+                                margin-left: 10px;
+                                transition: all 1s;
+                                &:hover{
+                                    transform: rotate(360deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .wishlistpage{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background-color: white;
+    
+        .main-box{
+            width: 60%;
+            height: auto;
+    
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 80px;
+    
+                h1{
+                    font-size: 50px;
+                    font-weight: 700;
+                    letter-spacing: 4px;
+                    color: orange;
+                }
+            }
+    
+            .list{
+                width: 100%;
+                height: auto;
+    
+                .wishcart{
+                    display: flex;
+                    width: 100%;
+                    height: 150px;
+                    margin-bottom: 10px;
+                    background-color: #F3EFE0;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+                    .photo{
+                        width: 25%;
+                        height: 150px;
+    
+                        img{
+                            width: 100%;
+                            height: 150px;
+                        }
+                    }
+    
+                    .info{
+                        width: 50%;
+                        height: 150px;
+    
+                        .name{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 75px;
+    
+                            h5{
+                                color: #000000;
+                                margin-left: 10px;
+                            }
+                        }
+    
+                        .about{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 100%;
+                            height: 75px;
+    
+                            .year{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 30%;
+                                height: 75px;
+                                font-size: 17px;
+    
+                                p{
+                                    color: orange;
+                                    font-size: 18px;
+                                    font-family: sans-serif;
+    
+                                    span{
+                                        color: red;
+                                    }
+                                }
+                            }
+    
+                            .rating{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 30%;
+                                height: 75px;
+    
+                                p{
+                                    color: orange;
+                                    font-size: 18px;
+                                    font-family: sans-serif;
+    
+                                    span{
+                                        color: red;
+                                    }
+                                }
+                            }
+    
+                            .price{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 30%;
+                                height: 75px;
+    
+                                p{
+                                    color: orange;
+                                    font-size: 18px;
+                                    font-family: sans-serif;
+    
+                                    span{
+                                        color: red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .buttonbox{
+                        width: 25%;
+                        height: 150px;
+    
+                        .deletebutton{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 75px;
+    
+                            button {
+                                height: 3em;
+                                width: 8em;
+                                border: none;
+                                border-radius: 10em;
+                                background: #CD0404;
+                                font-size: 17px;
+                                color: white;
+                                font-family: inherit;
+                                font-weight: 600;
+                                transition: all 0.2s;
+                            }
+                               
+                            button:hover {
+                                animation: shake3856 0.3s linear infinite both;
+                            }
+                               
+                            @keyframes shake3856 {
+                                0% {
+                                 transform: translate(0);
+                                }
+                               
+                                20% {
+                                 transform: translate(-2px, 2px);
+                                }
+                               
+                                40% {
+                                 transform: translate(-2px, -2px);
+                                }
+                               
+                                60% {
+                                 transform: translate(2px, 2px);
+                                }
+                               
+                                80% {
+                                 transform: translate(2px, -2px);
+                                }
+                               
+                                100% {
+                                 transform: translate(0);
+                                }
+                            }
+                        }
+    
+                        .cartbutton{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 75px;
+    
+                            button {
+                                height: 3em;
+                                width: 8em;
+                                border: none;
+                                border-radius: 10em;
+                                background: #68B984;
+                                font-size: 17px;
+                                color: white;
+                                font-family: inherit;
+                                font-weight: 600;
+                            }
+                               
+                            button:hover {
+                                animation: shake3856 0.3s linear infinite both;
+                            }
+                               
+                            @keyframes shake3856 {
+                                0% {
+                                 transform: translate(0);
+                                }
+                               
+                                20% {
+                                 transform: translate(-2px, 2px);
+                                }
+                               
+                                40% {
+                                 transform: translate(-2px, -2px);
+                                }
+                               
+                                60% {
+                                 transform: translate(2px, 2px);
+                                }
+                               
+                                80% {
+                                 transform: translate(2px, -2px);
+                                }
+                               
+                                100% {
+                                 transform: translate(0);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .emptywish{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+        background-color: white;
+    
+        .main-box{
+            width: 50%;
+            height: 300px;
+    
+            .photo{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 200px;
+    
+                img{
+                    width: 30%;
+                    height: 150px;
+                }
+            }
+    
+            .text{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 100px;
+    
+                h1{
+                   color: #000000;
+                }
+    
+                .fa-face-sad-tear{
+                    color: orange;
+                }
+            }
+        }
+    }
+
+
+
+    .cartpage{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background-color: white;
+    
+        .main-box{
+            width: 70%;
+            height: auto;
+            margin-bottom: 50px;
+    
+            table{
+                border: 1px solid black;
+                margin-top: 5px;
+    
+                tr{
+                    background-color: darkblue;
+                }
+    
+                td{
+                    color: white;
+                    text-align: center;
+                }
+    
+                td:nth-child(5){
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    button{
+                        width: 20%;
+                        height: 30px;
+                        background-color: orange;
+                    }
+    
+                    .numberbox{
+                        width: 30%;
+                        height: 30px;
+                        color: black;
+                        text-align: center;
+                        background-color: beige;
+                    }
+                }
+    
+                td:nth-child(6){
+    
+                    button{
+                        width: 25%;
+                        height: 30px;
+                        background-color: transparent;
+                        border: none;
+    
+                        .fa-trash{
+                            font-size: 20px;
+                            color: #CD0404;
+                        }
+                    }
+                }
+    
+                th{
+                    text-align: center;
+                    color: orange;
+                    background-color: #171D22;
+                    border-right: 1px solid black;
+                    border-bottom: 1px solid black;
+                }
+            }
+    
+    
+            .totalprice{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 80px;
+    
+                h1{
+                    font-size: 50px;
+                    font-weight: 700;
+    
+                    span{
+                        font-size: 45px;
+                    }
+                }
+            }
+    
+            .paybox{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 100%;
+                height: 80px;
+    
+                button {
+                    height: 2.8em;
+                    width: 9em;
+                    background: transparent;
+                    animation: jello-horizontal 0.9s both;
+                    border: 2px solid #FF8B13;
+                    outline: none;
+                    color: #FF8B13;
+                    font-size: 17px;
+                }
+                   
+                button:hover {
+                    background: #FF8B13;
+                    color: white;
+                    animation: squeeze3124 0.9s both;
+                }
+                   
+                @keyframes squeeze3124 {
+                    0% {
+                     transform: scale3d(1, 1, 1);
+                    }
+                   
+                    30% {
+                     transform: scale3d(1.25, 0.75, 1);
+                    }
+                   
+                    40% {
+                     transform: scale3d(0.75, 1.25, 1);
+                    }
+                   
+                    50% {
+                     transform: scale3d(1.15, 0.85, 1);
+                    }
+                   
+                    65% {
+                     transform: scale3d(0.95, 1.05, 1);
+                    }
+                   
+                    75% {
+                     transform: scale3d(1.05, 0.95, 1);
+                    }
+                   
+                    100% {
+                     transform: scale3d(1, 1, 1);
+                    }
+                }
+            }
+        }
+    }
+
+    .emptycart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+        background-color: white;
+    
+        .hero-box{
+            width: 40%;
+            height: 400px;
+    
+            .photo{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 200px;
+    
+                img{
+                    width: 50%;
+                    height: 200px;
+                }
+            }
+    
+            .text1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100px;
+    
+                h1{
+                    color: orange;
+                    font-weight: bolder
+                }
+            }
+    
+            .text2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100px;
+    
+                p{
+                    font-size: 25px;
+                    color: #000000;
+    
+                    .fa-face-smile{
+                        font-size: 30px;
+                        color: orange;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .signinbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+        background-image: url('../img/loginbg.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        .main-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            height: 500px;
+            background-color: #579BB1;
+            border-top: 3px solid orange;
+            border-radius: 4px;
+    
+            .formbox{
+                width: 80%;
+                height: 450px;
+    
+                .logo{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 50px;
+                }
+    
+                .email{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 70px;
+    
+                    .inputbox{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 90%;
+                        height: 60px;
+                        background-color: white;
+                        border: 2px solid transparent;
+                        border-radius: 4px;
+    
+                        input{
+                            width: 85%;
+                            height: 35px;
+                            background-color: white;
+                            border: none;
+                            color: black;
+                            font-family: sans-serif;
+                            font-size: 16px;
+                            &:focus-visible{
+                                outline: none;
+                            }
+                        }
+
+                        input::placeholder{
+                            color: black;
+                        }
+                    }
+    
+                }
+    
+                .password{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 70px;
+    
+                    .inputbox{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 90%;
+                        height: 60px;
+                        background-color: white;
+                        border: 2px solid transparent;
+                        border-radius: 4px;
+    
+                        input{
+                            width: 85%;
+                            height: 35px;
+                            background-color: white;
+                            border: none;
+                            color: black;
+                            font-family: sans-serif;
+                            font-size: 16px;
+                            &:focus-visible{
+                                outline: none;
+                            }
+                        }
+
+                        input::placeholder{
+                            color:black;
+                        }
+                    }
+                }
+    
+                .checkbox{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 50px;
+    
+                    // input{
+                    //     width: 10%;
+                    //     height: 18px;
+                    //     margin-left: 10px;
+                    // }
+    
+                    // label{
+                    //     font-size: 17px;
+                    // }
+    
+                    .main {
+                        display: block;
+                        position: relative;
+                        padding-left: 45px;
+                        margin-bottom: 15px;
+                        margin-left: 18px;
+                        cursor: pointer;
+                        font-size: 18px;
+                        color: white;
+                    }
+                      
+                    /* Hide the default checkbox */
+                    input[type=checkbox] {
+                        visibility: hidden;
+                    }
+                      
+                    /* Creating a custom checkbox
+                    based on demand */
+                    .geekmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 20px;
+                        width: 25px;
+                        background-color: white;
+                    }
+                      
+                    /* Specify the background color to be
+                    shown when checkbox is checked */
+                    .main input:checked ~ .geekmark {
+                        background-color: white;
+                    }
+                      
+                    /* Checkmark to be shown in checkbox */
+                    /* It is not be shown when not checked */
+                    .geekmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+                      
+                    /* Display checkmark when checked */
+                    .main input:checked ~ .geekmark:after {
+                        display: block;
+                    }
+    
+                    .main .geekmark:after {
+                        left: 8px;
+                        bottom: 5px;
+                        width: 6px;
+                        height: 12px;
+                        border: solid black;
+                        border-width: 0 4px 4px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+    
+                .button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 80px;
+    
+                    button{
+                        width: 90%;
+                        height: 50px;
+                        cursor: pointer;
+                        border: 1px solid #150050;
+                        background-color: #150050;
+                        border-radius: 4px;
+                        color: white;
+                        font-size: 18px;
+                        font-weight: 700;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: white;
+                            background-color: #150839;
+                        }
+                    }
+                }
+    
+                .signup{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 50px;
+    
+                    p{
+                        font-size: 16px;
+                        color: rgba(255,255,255,0.5);
+    
+                        a{
+                            text-decoration: none;
+                            color: red;
+                        }
+                    }
+                }
+    
+                .forgotpass{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 50px;
+    
+                    a{
+                        text-decoration: none;
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .signupbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+        background-image: url('../img/loginbg.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        .main-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            height: 500px;
+            background-color: #579BB1;
+            border-top: 3px solid orange;
+            border-radius: 4px;
+    
+            .formbox{
+                width: 80%;
+                height: 450px;
+    
+                .logo{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 50px;
+                }
+    
+                .name{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 70px;
+    
+                    .inputbox{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 90%;
+                        height: 50px;
+                        background-color: white;
+                        border: 2px solid transparent;
+                        border-radius: 4px;
+    
+                        input{
+                            width: 85%;
+                            height: 35px;
+                            background-color: white;
+                            border: none;
+                            color: black;
+                            font-family: sans-serif;
+                            font-size: 16px;
+                            &:focus-visible{
+                                outline: none;
+                            }
+                        }
+
+                        input::placeholder{
+                            color: black;
+                        }
+                    }
+                }
+    
+    
+                .email{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 70px;
+    
+                    .inputbox{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 90%;
+                        height: 50px;
+                        background-color: white;
+                        border: 2px solid transparent;
+                        border-radius: 4px;
+    
+                        input{
+                            width: 85%;
+                            height: 35px;
+                            background-color: white;
+                            border: none;
+                            color: black;
+                            font-family: sans-serif;
+                            font-size: 16px;
+                            &:focus-visible{
+                                outline: none;
+                            }
+                        }
+
+                        input::placeholder{
+                            color: black;
+                        }
+                    }
+                }
+    
+    
+                .password{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 70px;
+    
+                    .inputbox{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 90%;
+                        height: 50px;
+                        background-color: white;
+                        border: 2px solid transparent;
+                        border-radius: 4px;
+    
+                        input{
+                            width: 85%;
+                            height: 35px;
+                            background-color: white;
+                            border: none;
+                            color: black;
+                            font-family: sans-serif;
+                            font-size: 16px;
+                            &:focus-visible{
+                                outline: none;
+                            }
+                        }
+
+                        input::placeholder{
+                            color: black;
+                        }
+                    }
+                }
+    
+    
+                .checkbox{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 50px;
+    
+                    .main {
+                        display: block;
+                        position: relative;
+                        padding-left: 45px;
+                        margin-bottom: 15px;
+                        margin-left: 18px;
+                        cursor: pointer;
+                        font-size: 18px;
+                        color: white;
+    
+                        a{
+                            text-decoration: none;
+                            color: red;
+                        }
+                    }
+                      
+                    /* Hide the default checkbox */
+                    input[type=checkbox] {
+                        visibility: hidden;
+                    }
+                      
+                    /* Creating a custom checkbox
+                    based on demand */
+                    .geekmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 20px;
+                        width: 25px;
+                        background-color: white;
+                    }
+                      
+                    /* Specify the background color to be
+                    shown when checkbox is checked */
+                    .main input:checked ~ .geekmark {
+                        background-color: white;
+                    }
+                      
+                    /* Checkmark to be shown in checkbox */
+                    /* It is not be shown when not checked */
+                    .geekmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+                      
+                    /* Display checkmark when checked */
+                    .main input:checked ~ .geekmark:after {
+                        display: block;
+                    }
+    
+                    .main .geekmark:after {
+                        left: 8px;
+                        bottom: 5px;
+                        width: 6px;
+                        height: 12px;
+                        border: solid black;
+                        border-width: 0 4px 4px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+    
+    
+                .button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 80px;
+    
+                    button{
+                        width: 90%;
+                        height: 50px;
+                        cursor: pointer;
+                        border: 1px solid #150050;
+                        background-color: #150050;
+                        border-radius: 4px;
+                        color: white;
+                        font-size: 18px;
+                        font-weight: 700;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: orange;
+                            background-color: #150839;
+                        }
+                    }
+                }
+    
+    
+                .info{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 50px;
+    
+                    p{
+                        font-size: 16px;
+                        color: rgba(255,255,255,0.5);
+    
+                        a{
+                            text-decoration: none;
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .forgotpassbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+        background-image: url('../img/loginbg.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        .main-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            height: 400px;
+            background-color: #579BB1;
+            border-top: 3px solid orange;
+            border-radius: 4px;
+    
+            .formbox{
+                width: 80%;
+                height: 350px;
+    
+                .logo{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 50px;
+                }
+    
+                .email{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100px;
+    
+                    .inputbox{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 90%;
+                        height: 50px;
+                        background-color: white;
+                        border: 2px solid transparent;
+                        border-radius: 4px;
+    
+                        input{
+                            width: 85%;
+                            height: 35px;
+                            background-color: white;
+                            border: none;
+                            color: black;
+                            font-family: sans-serif;
+                            font-size: 16px;
+                            &:focus-visible{
+                                outline: none;
+                            }
+                        }
+
+                        input::placeholder{
+                            color: black;
+                        }
+                    }
+                }
+    
+                .privacy{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 50px;
+    
+                    .main {
+                        display: block;
+                        position: relative;
+                        padding-left: 45px;
+                        margin-bottom: 15px;
+                        margin-left: 18px;
+                        cursor: pointer;
+                        font-size: 18px;
+                        color: white;
+    
+                        a{
+                            text-decoration: none;
+                            color: red;
+                        }
+                    }
+                      
+                    /* Hide the default checkbox */
+                    input[type=checkbox] {
+                        visibility: hidden;
+                    }
+                      
+                    /* Creating a custom checkbox
+                    based on demand */
+                    .geekmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 20px;
+                        width: 25px;
+                        background-color: white;
+                    }
+                      
+                    /* Specify the background color to be
+                    shown when checkbox is checked */
+                    .main input:checked ~ .geekmark {
+                        background-color: white;
+                    }
+                      
+                    /* Checkmark to be shown in checkbox */
+                    /* It is not be shown when not checked */
+                    .geekmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+                      
+                    /* Display checkmark when checked */
+                    .main input:checked ~ .geekmark:after {
+                        display: block;
+                    }
+    
+                    .main .geekmark:after {
+                        left: 8px;
+                        bottom: 5px;
+                        width: 6px;
+                        height: 12px;
+                        border: solid black;
+                        border-width: 0 4px 4px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+    
+    
+                .button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 80px;
+    
+                    button{
+                        width: 90%;
+                        height: 50px;
+                        cursor: pointer;
+                        border: 1px solid #150050;
+                        background-color: #150050;
+                        border-radius: 4px;
+                        color: white;
+                        font-size: 18px;
+                        font-weight: 700;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: white;
+                            background-color: #150839;
+                        }
+                    }
+                }
+    
+    
+                .info{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 50px;
+                    font-size: 14px;
+                    color: rgba(255,255,255,0.5);
+                    font-family: sans-serif;
+                }
+            }
+        }
+    }
+
+
+
+    footer{
+        width: 100%;
+        height: 450px;
+        background-color: #D0B8A8;
+    
+        .newsletter{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 150px;
+            background-image: url('../img//newsletter.jpg');
+            background-position: center;
+            background-size: cover;
+        
+            .main-box{
+                display: flex;
+                width: 80%;
+                height: 100px;
+        
+                .text{
+                    width: 50%;
+                    height: 100px;
+        
+                    .h4box{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 60px;
+        
+                        h4{
+                            color: black;
+                            font-size: 30px;
+                            font-weight: 700;
+                            font-family: sans-serif;
+                            text-transform: uppercase;
+                        }
+                    }
+        
+                    .pbox{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 40px;
+        
+                        p{
+                            color: black;
+                            font-size: 16px;
+                            font-weight: 500;
+                            font-family: sans-serif;
+                        }
+                    }
+                }
+        
+        
+                .inputbox{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 50%;
+                    height: 100px;
+        
+                    .inputbar{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        width: 80%;
+                        height: 50px;
+                        background-color: white;
+                        border-radius: 4px;
+                        box-shadow: 0px 3px 4px 0px rgb(30 30 30 / 17%);
+        
+                        input{
+                            width: 65%;
+                            height: 44px;
+                            border: none;
+                            &:focus-visible{
+                                outline: none;
+                            }
+                        }
+        
+                        button{
+                            width: 30%;
+                            height: 48px;
+                            color: #e4d804;
+                            background-color: black;
+                            position: absolute;
+                            right: 2px;
+                            border-radius: 4px;
+                            font-size: 14px;
+                            font-weight: 700;
+                            font-family: sans-serif;
+                            letter-spacing: 1px;
+                            cursor: pointer;
+                            transition: all 0.5s;
+                            &:hover{
+                                background-color: #e4d804;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+        .footer{
+            width: 100%;
+            height: 300px;
+    
+            .nav{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 200px;
+    
+                .hero-box{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 80%;
+                    height: 200px;
+        
+                    .apps{
+                        width: 20%;
+                        height: 200px;
+        
+                        .title{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 50px;
+        
+                            h6{
+                                color: black;
+                                font-size: 16px;
+                                font-weight: 500;
+                                font-family: sans-serif;
+                            }
+                        }
+        
+                        .appstore{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 75px;
+        
+                            a{
+                                width: 80%;
+                                height: 60px;
+        
+                                img{
+                                    width: 100%;
+                                    height: 60px;
+                                }
+                            }
+                        }
+        
+                        .playstore{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 75px;
+        
+                            a{
+                                width: 80%;
+                                height: 60px;
+        
+                                img{
+                                    width: 90%;
+                                    height: 45px;
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+        
+                    .resources{
+                        width: 20%;
+                        height: 200px;
+        
+                        .title{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 50px;
+        
+                            h6{
+                                color: black;
+                                font-size: 16px;
+                                font-weight: 500;
+                                font-family: sans-serif;
+                            }
+                        }
+        
+                        .aboutUs{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 50px;
+        
+                            a{
+                                font-size: 16px;
+                                font-weight: 300;
+                                font-family: sans-serif;
+                                color: #7F8487;
+                                text-decoration: none;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: #F49D1A;
+                                }
+                            }
+                        }
+        
+                        .pricing{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 50px;
+        
+                            a{
+                                font-size: 16px;
+                                font-weight: 300;
+                                font-family: sans-serif;
+                                color: #7F8487;
+                                text-decoration: none;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: #F49D1A;
+                                }
+                            }
+                        }
+        
+                        .helpCenter{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 50px;
+        
+                            a{
+                                font-size: 16px;
+                                font-weight: 300;
+                                font-family: sans-serif;
+                                color: #7F8487;
+                                text-decoration: none;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: #F49D1A;
+                                }
+                            }
+                        }
+                    }
+        
+                    .legal{
+                        width: 20%;
+                        height: 200px;
+        
+                        .title{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 50px;
+        
+                            h6{
+                                color: black;
+                                font-size: 16px;
+                                font-weight: 500;
+                                font-family: sans-serif;
+                            }
+                        }
+        
+                        .term{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 50px;
+        
+                            a{
+                                font-size: 16px;
+                                font-weight: 300;
+                                font-family: sans-serif;
+                                color: #7F8487;
+                                text-decoration: none;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: #F49D1A;
+                                }
+                            }
+                        }
+        
+                        .privacy{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 50px;
+        
+                            a{
+                                font-size: 16px;
+                                font-weight: 300;
+                                font-family: sans-serif;
+                                color: #7F8487;
+                                text-decoration: none;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: #F49D1A;
+                                }
+                            }
+                        }
+        
+                        .security{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 50px;
+        
+                            a{
+                                font-size: 16px;
+                                font-weight: 300;
+                                font-family: sans-serif;
+                                color: #7F8487;
+                                text-decoration: none;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: #F49D1A;
+                                }
+                            }
+                        }
+                    }
+        
+                    .contact{
+                        width: 20%;
+                        height: 200px;
+        
+                        .title{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 50px;
+        
+                            h6{
+                                color: black;
+                                font-size: 16px;
+                                font-weight: 500;
+                                font-family: sans-serif;
+                            }
+                        }
+        
+                        .tel{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 50px;
+        
+                            p{
+                                font-size: 16px;
+                                font-weight: 300;
+                                font-family: sans-serif;
+                                color: #7F8487;
+                                text-decoration: none;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: #F49D1A;
+                                }
+                            }
+                        }
+        
+                        .email{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 50px;
+        
+                            P{
+                                font-size: 16px;
+                                font-weight: 300;
+                                font-family: sans-serif;
+                                color: #7F8487;
+                                text-decoration: none;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: #F49D1A;
+                                }
+                            }
+                        }
+        
+                        .socialApps{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 50px;
+        
+                            a{
+                                .fa-square-facebook{
+                                    color: #4267B2;
+                                    font-size: 25px;
+                                    margin-left: 5px;
+                                    transition: all 1s;
+                                    &:hover{
+                                        transform: rotate(360deg);
+                                    }
+                                }
+        
+                            }
+        
+                            a{
+                                .fa-youtube{
+                                    color: #FF0000;
+                                    font-size: 25px;
+                                    margin-left: 10px;
+                                    transition: all 1s;
+                                    &:hover{
+                                        transform: rotate(360deg);
+                                    }
+                                }
+                            }
+        
+                            a{
+                                .fa-instagram{
+                                    color: #C13584;
+                                    font-size: 25px;
+                                    margin-left: 10px;
+                                    transition: all 1s;
+                                    &:hover{
+                                        transform: rotate(360deg);
+                                    }
+                                }
+                            }
+        
+                            a{
+                                .fa-twitter{
+                                    color: #1DA1F2;
+                                    font-size: 25px;
+                                    margin-left: 10px;
+                                    transition: all 1s;
+                                    &:hover{
+                                        transform: rotate(360deg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+    
+            .copyright{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100px;
+    
+                .main-box{
+                    display: flex;
+                    width: 80%;
+                    height: 100px;
+    
+                    .text{
+                        display: flex;
+                        align-items: center;
+                        width: 50%;
+                        height: 100px;
+    
+                        p{
+                            font-size: 15px;
+                            font-family: sans-serif;
+                            color: black;
+    
+                            span{
+                                color: #F49D1A;
+                            }
+                        }
+                    }
+    
+                    .photo{
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        width: 50%;
+                        height: 100px;
+    
+                        img{
+                            width: 50%;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

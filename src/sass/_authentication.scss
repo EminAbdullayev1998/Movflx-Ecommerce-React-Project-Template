@@ -1,0 +1,249 @@
+.authentication{
+    position: relative;
+    height: 753px;
+    background-color: bisque;
+    background-image: url('../img/authbg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .main-box{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 100px;
+        left: 850px;
+        width: 30%;
+        height: 600px;
+        background-color: #28282d;
+        border-top: 2px solid #e4d804;
+        border-radius: 4px;
+
+        .formbox{
+            width: 80%;
+            height: 550px;
+
+            .logo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 50px;
+            }
+
+            .h2box{
+                width: 100%;
+                height: 60px;
+
+                .alert{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+
+            .email{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 70px;
+
+                .inputbox{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 90%;
+                    height: 60px;
+                    background-color: #2b2b31;
+                    border: 2px solid transparent;
+                    border-radius: 4px;
+
+                    input{
+                        width: 85%;
+                        height: 35px;
+                        background-color: #2b2b31;
+                        border: none;
+                        color: #fff;
+                        font-family: sans-serif;
+                        font-size: 16px;
+                        &:focus-visible{
+                            outline: none;
+                        }
+                    }
+                }
+            }
+
+
+            .password{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 70px;
+
+                .inputbox{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 90%;
+                    height: 60px;
+                    background-color: #2b2b31;
+                    border: 2px solid transparent;
+                    border-radius: 4px;
+
+                    input{
+                        width: 85%;
+                        height: 35px;
+                        background-color: #2b2b31;
+                        border: none;
+                        color: #fff;
+                        font-family: sans-serif;
+                        font-size: 16px;
+                        &:focus-visible{
+                            outline: none;
+                        }
+                    }
+                }
+            }
+
+
+            .checkbox{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 50px;
+
+                // input{
+                //     width: 10%;
+                //     height: 18px;
+                //     margin-left: 10px;
+                // }
+
+                // label{
+                //     font-size: 17px;
+                // }
+
+                .main {
+                    display: block;
+                    position: relative;
+                    padding-left: 40px;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                    margin-left: 25px;
+                    color: white;
+                    cursor: pointer;
+                    font-size: 18px;
+                }
+                  
+                /* Hide the default checkbox */
+                input[type=checkbox] {
+                    visibility: hidden;
+                }
+                  
+                /* Creating a custom checkbox
+                based on demand */
+                .geekmark {
+                    position: absolute;
+                    top: 3px;
+                    left: 0;
+                    height: 20px;
+                    width: 25px;
+                    background-color: #e4d804;
+                }
+                  
+                /* Specify the background color to be
+                shown when checkbox is checked */
+                .main input:checked ~ .geekmark {
+                    background-color: #FFEA11;
+                }
+                  
+                /* Checkmark to be shown in checkbox */
+                /* It is not be shown when not checked */
+                .geekmark:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                }
+                  
+                /* Display checkmark when checked */
+                .main input:checked ~ .geekmark:after {
+                    display: block;
+                }
+
+                .main .geekmark:after {
+                    left: 8px;
+                    bottom: 5px;
+                    width: 9px;
+                    height: 15px;
+                    border: solid black;
+                    border-width: 0 4px 4px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+            }
+
+
+            .button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 80px;
+
+                button{
+                    width: 90%;
+                    height: 50px;
+                    cursor: pointer;
+                    border: 1px solid #e4d804;
+                    background-color: #e4d804;
+                    border-radius: 4px;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 700;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: black;
+                        background-color: #FFEA11;
+                    }
+                }
+            }
+
+
+            .signup{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 50px;
+
+                p{
+                    font-size: 16px;
+                    color: rgba(255,255,255,0.5);
+
+                    a{
+                        text-decoration: none;
+                        color: #e4d804;
+                    }
+                }
+            }
+
+
+            .forgotpass{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 50px;
+
+                a{
+                    text-decoration: none;
+                    color: #e4d804;
+                }
+            }
+        }
+    }
+}

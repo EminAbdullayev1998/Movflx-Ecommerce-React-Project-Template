@@ -1,0 +1,539 @@
+.moviespage{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1350px;
+    background-color: #2b2b31;
+
+    .main-box{
+        width: 80%;
+        height: 1350px;
+
+        .searchbox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100px;
+
+            .search{
+                display: flex;
+                align-items: center;
+                width: 50%;
+                height: 50px;
+                background-color: white;
+                border-radius: 8px;
+
+                input{
+                    width: 90%;
+                    height: 40px;
+                    margin-left: 5px;
+                    border: none;
+                    &:focus-visible{
+                        outline: none;
+                    }
+                }
+
+                .fa-solid{
+                    font-size: 25px;
+                    color: black;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+
+        .filterbox{
+            display: none;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+
+            button{
+                width: 9%;
+                height: 40px;
+                border: none;
+                border-radius: 10px;
+                background-color: #e4d804;
+                margin-left: 70px;
+            }
+        }
+
+
+        .listbox{
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 1250px;
+
+            .categorybox{
+                width: 20%;
+                height: 1250px;
+                overflow-y: auto;
+                background-color: #28282d;
+    
+                .categoryitem{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 50px;
+    
+                    /* Hide the default checkbox */
+                        .container input {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 0;
+                            width: 0;
+                        }
+      
+                        .container {
+                          display: block;
+                          position: relative;
+                          cursor: pointer;
+                          font-size: 20px;
+                          user-select: none;
+                          text-align: center;
+                          width: 80%;
+                          height: 40px;
+    
+                           span{
+                              margin-left: 35px;
+                           }
+                        }
+      
+                    /* Create a custom checkbox */
+                    .checkmark {
+                      position: relative;
+                      top: -25px;
+                      left: 0px;
+                      height: 24px;
+                      width: 13%;
+                      background-color: #e5e5e5;
+                      border-radius: 50%;
+                    }
+                    
+                    /* When the checkbox is checked, add a blue background */
+                    .container input:checked ~ .checkmark {
+                      background-color: #e4d804;
+                    }
+      
+                    /* Create the checkmark/indicator (hidden when not checked) */
+                    .checkmark:after {
+                      content: "";
+                      position: absolute;
+                      display: none;
+                    }
+                    
+                    /* Show the checkmark when checked */
+                    .container input:checked ~ .checkmark:after {
+                      display: block;
+                    }
+      
+                    /* Style the checkmark/indicator */
+                    .container .checkmark:after {
+                      left: 0.40em;
+                      top: 0.25em;
+                      width: 0.30em;
+                      height: 0.6em;
+                      border: solid black;
+                      border-width: 0 0.15em 0.15em 0;
+                      transform: rotate(45deg);
+                    }
+                }
+            }
+
+
+            .movieslist{
+                width: 80%;
+                height: 1150px;
+
+                .list{
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    height: 1150px;
+
+                    .card{
+                        width: 30%;
+                        height: 550px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                        border: 2px solid #28282d;
+                        background-color: #28282d;
+                        padding: 5px;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        transition: all 0.5s;
+                        &:hover{
+                            border: 2px solid #e4d804;
+                        }
+            
+                        .photo{
+                            position: relative;
+                            width: 100%;
+                            height: 400px;
+                            background-color: #2b2b31;
+                            border-radius: 4px;
+                            overflow: hidden;
+                            &:hover{
+                                .info{
+                                    visibility: visible;
+                                }
+            
+                                img{
+                                    transform: scale(1.1,1.1);
+                                }
+                            }
+            
+                            img{
+                                width: 100%;
+                                height: 400px;
+                                background-color: #2b2b31;
+                                transition: all 1s;
+                            }
+            
+                            .info{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                visibility: hidden;
+                                position: absolute;
+                                top: 0;
+                                width: 100%;
+                                height: 400px;
+                                background-color: rgba(0, 0, 0, 0.7);
+            
+                                .hero-box{
+                                    width: 90%;
+                                    height: 300px;
+            
+                                    .title{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: auto;
+                                    }
+            
+                                    .duration{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 40px;
+                                        margin-top: 10px;
+            
+                                        p{
+                                            font-size: 18px;
+                                            .fa-clock{
+                                                color: #e4d804;
+                                            }
+                                        }
+                                    }
+            
+                                    .year{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 40px;
+            
+                                        p{
+                                            font-size: 18px;
+                                            .fa-calendar-days{
+                                                color: #e4d804;
+                                            }
+                                        }
+                                    }
+            
+                                    .quality{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 40px;
+            
+                                        p{
+                                            font-size: 18px;
+                                            .fa-glasses{
+                                                color: #e4d804;
+                                            }
+                                        }
+                                    }
+            
+                                    .rating{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 40px;
+            
+                                        p{
+                                            font-size: 18px;
+                                            .fa-star{
+                                                color: #e4d804;
+                                            }
+                                        }
+                                    }
+            
+                                    .price{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 40px;
+            
+                                        p{
+                                            font-size: 18px;
+                                            .fa-sack-dollar{
+                                                color: #e4d804;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+            
+                        .part1{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 50px;
+            
+                            button{
+                                width: 70%;
+                                height: 40px;
+                                color: white;
+                                font-weight: 30px;
+                                font-weight: 500;
+                                border: none;
+                                border: 1px solid #e4d804;
+                                border-radius: 4px;
+                                background-color: #20212b;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: black;
+                                    background-color: #e4d804;
+                                }
+                            }
+                        }
+            
+                        .part2{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 50px;
+            
+                            button{
+                                width: 70%;
+                                height: 40px;
+                                color: white;
+                                font-weight: 30px;
+                                font-weight: 500;
+                                border: none;
+                                border: 1px solid #e4d804;
+                                border-radius: 4px;
+                                background-color: #20212b;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: black;
+                                    background-color: #e4d804;
+                                }
+                            }
+                        }
+            
+                        .part3{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 50px;
+            
+                            a{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 70%;
+                                height: 40px;
+                                color: white;
+                                text-decoration: none;
+                                font-weight: 30px;
+                                font-weight: 500;
+                                border: none;
+                                border: 1px solid #e4d804;
+                                border-radius: 4px;
+                                background-color: #20212b;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: black;
+                                    background-color: #e4d804;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .pagination-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100px;
+                    font-weight: 500;
+                    font-size: 15px;
+                  }
+                  
+                  .pagination-container a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: black;
+                    height: 40px;
+                    width: 50px;
+                    text-decoration: none;
+                    transition: background-color .2s;
+                    border: 1px solid black;
+                    background-color: white;
+                    color: black;
+                    cursor: pointer;
+                    
+                  }
+
+                  #prev{
+                    width: 80px;
+                    border-radius: 4px;
+                  }
+
+                  #next{
+                    width: 80px;
+                    border-radius: 4px;
+                  }
+
+                  #numbers{
+                    clip-path: circle(43.0% at 50% 50%);
+                  }
+                  
+                  .pagination-container a.active {
+                    background-color: #e4d804;
+                    color: #171D22;
+                    border: 1px solid #7cbddb;
+                  }
+                  
+                  .pagination-container a.disabled { 
+                    opacity: 0.2;
+                  }
+                  .pagination-container a:hover:not(.active) {background-color: #e4d804; color: #171D22;}
+            }
+
+
+            .filterHamburger{
+                display: none;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 670px;
+                z-index: 999;
+                background-color: #00425A;
+
+                .closebox{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    width: 100%;
+                    height: 50px;
+
+                    .fa-x{
+                        font-size: 35px;
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                }
+
+                .categorylist{
+                    width: 100%;
+                    height: 460px;
+                    overflow-y: auto;
+
+                    .itemcategory{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 50px;
+
+                        
+                        .container input {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 0;
+                            width: 0;
+                        }
+
+                        .container {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            cursor: pointer;
+                            font-size: 20px;
+                            user-select: none;
+                            width: 100%;
+                            height: 40px;
+
+                            span{
+                                position: absolute;
+                                left: 510px;
+                            }
+                        }
+
+                        
+                        .checkmark {
+                            position: relative;
+                            top: 2px;
+                            left: -120px;
+                            height: 20px;
+                            width: 2%;
+                            background-color: #e5e5e5;
+                            border-radius: 50%;
+                        }
+
+                        
+                        .container input:checked ~ .checkmark {
+                            background-color: seagreen;
+                        }
+
+                        
+                        .checkmark:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+
+                        
+                        .container input:checked ~ .checkmark:after {
+                            display: block;
+                        }
+
+                        
+                        .container .checkmark:after {
+                            left: 10px;
+                            top: 5px;
+                            width: 25%;
+                            height: 10px;
+                            border: solid white;
+                            border-width: 0 0.15em 0.15em 0;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

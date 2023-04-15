@@ -1,0 +1,56 @@
+
+@import 'authentication';
+
+@import 'header';
+
+@import 'footer';
+
+@import 'lightmode';
+
+@import 'darkmode';
+
+@import 'home';
+
+@import 'movies';
+
+@import 'moviedetails';
+
+@import 'pricing';
+
+@import 'blog';
+
+@import 'addblog';
+
+@import 'editblog';
+
+@import 'bloglistboard';
+
+@import 'contact';
+
+@import 'notfoundpage';
+
+@import 'wishlist';
+
+@import 'cart';
+
+@import 'signin';
+
+@import 'forgotpassword';
+
+@import 'signup';
+
+@import 'responsive';
+
+
+
+::-webkit-scrollbar-track{
+	background-color: #DDDDDD;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #e4d804;
+}
