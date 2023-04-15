@@ -4,6 +4,6 @@
 ## Live Demo: https://movflx-ecommerce.netlify.app/
 # $\textcolor{#ED2B2A}{\textsf{Authentication Details :}}$
 
-## $\textcolor{#FFD93D}{\textsf{Email: emin@gmail.com}}$
+## $\textcolor{#FFD93D}{\textsf{Email: emin@ gmail.com}}$
 
 
